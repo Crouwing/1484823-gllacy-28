@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Андрей Коротков](https://up.htmlacademy.ru/htmlcss/28/user/1484823).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
