@@ -31,10 +31,78 @@
  <main>
  	<h1>Магазин мороженного "Глейси"</h1>
 
- 	<section>
-    <h2>Большой блок со слайдами</h2>
-    <!-- Это будет потом! -->
-  </section>
+ <section>
+ <div class="slider"> <!-- Честно без понятия как делать слайдер)) -->
+<form>
+  <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+  <input type="radio" name="ice cream" id="slide1" checked>
+  <h2>Шоколадный пломбир и лимонный сорбет</h2>
+  <input type="radio" name="ice cream" id="slide2">
+  <h2>Пломбир с памадкой и клубничный щербет</h2>
+  <input type="radio" name="ice cream" id="slide3">
+  
+  
+  <div class="switch">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+  </div>
+    
+    <div class="slides">
+      <img src="#">
+      <img src="#">
+      <img src="#">
+    </div>
+	    <input type="button" name="chocolate" value="Давайте оба!">
+    </form>
+</div>
+
+<article>
+	<form>
+		<h2>Малинка даром!</h2>
+		<p>При покупке 2 кг любого фруктового мороженого,добавим<br>
+		   в ваш заказ банку малинового варенья бесплатно.</p>
+		<input type="button" name="Raspberry" value="Хочу варенье!">
+	</form>
+</article>
+
+<article>
+	<form>
+		<h2>Шоколадки даром!</h2>
+		<p>При покупке 2 кг пломбира,добавим в ваш заказ упаковку<br>
+		   вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+		<input type="button" name="chocolate" value="Хочу шоколадки!">
+	</form>
+</article>
+
+<div>
+	<li>
+ 			<img src="#"  width="" height="" alt="Фоновая картинка мороженого">
+ 			<p class="price">310₽/кг</p>
+  			<h3 class="info"><a href="#">
+  			Сливочное с апельсиновым<br>
+ 		 	джемом и цитрусовой стружкой</a></h3>
+  		</li>
+ 		<li>
+ 			<img src="#"  width="" height="" alt="Фоновая картинка мороженого">
+ 			<p class="price">380₽/кг</p>
+  			<h3 class="info"><a href="#">Сливочно-кофейное с кусочками<br>
+ 				   						 шоколада</a></h3>
+  		</li>
+ 		<li>
+ 			<img src="#"  width="" height="" alt="Фоновая картинка мороженого">
+ 			<p class="price">355₽/кг</p>
+  			<h3 class="info"><a href="#">Сливочное-клубничное с<br>
+ 				   			 			 присыпкой из белого шоколада</a></h3>
+  		</li>
+ 		<li>	
+ 			<img src="#"  width="" height="" alt="Фоновая картинка мороженого">
+ 			<p class="price">415₽/кг</p>
+  			<h3 class="info"><a href="#">Сливочное крем-брюле с<br>
+ 				   						 карамельной подливкой</a></h3>
+  		</li>
+</div>
+ </section>
 
  	<section>
  		<h2>Магазин Глэйси - это онлайн и офлайн-магазин по продаже мороженого собственного<br>
@@ -65,22 +133,21 @@
 	</article>
 
 	<article>
+		<form>
 		<p>	Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
 			всего самого вкусного, что у нас происходит.Обещаем не спамить
 			и не слать всякой ненужной ерунды. Честно =)
 		</p>
-
-		<form>
 			<input type="email" name="mail" placeholder="Электронная почта">
 			<input type="button" name="push" value="Отправить">
 		</form>
 
 	</article>
 
-	<section>
-    <h2>Карта</h2>
-    <!-- Карта позже! -->
-  	</section>
+<article> <!-- Карту не знал нужно интерактивную или нет, поставил интерактивную на всякий -->
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aed6cd1a7c850a52b74fd1cc367ebd031bd85d735acf8a115510b3b920ea20a35&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
+</article>
+
  </main>
 
  <footer>
