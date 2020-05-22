@@ -2,8 +2,8 @@
 <html lang="ru">
 
   <head>
-    <meta charset="UTF-8">
-    <title>Каталог</title>
+    <meta charset="utf-8">
+    <title>Магазин мороженного"Глейси"</title>
   </head>
 
   <body>
@@ -37,7 +37,7 @@
         </ul>
         <div class="search">
           <form action="https://echo.htmlacademy.ru" method="get">
-            <button type="submit"> <img src="#" alt="Поиск  ">
+            <button type="submit"> <img src="#" alt="Поиск ">
               <!--Поиск -->
             </button>
             <input type="search" name="search" placeholder="Что ищем?"> </form>
@@ -85,74 +85,32 @@
         </a> </p>
     </header>
     <main>
-      <div>
-        <ul class="breadcrumb">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li>Сливочное</li>
-        </ul>
-        <h1>Сливочное мороженое</h1> </div>
+      <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
       <section>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <div>
-            <p>Сортировка:</p>
-            <select name="sort">
-              <option name="по популярности" selected>по популярности</option>
-              <option name="сначала недорогие">сначала недорогие</option>
-              <option name="сначала дорогие">сначала дорогие</option>
-              <option name="по жирности">по жирности</option>
-            </select>
+        <div class="slider">
+          <ul>
+            <li> <img src="img/content/slide1.png" alt="">
+              <h2>Крем-брюле и пломбир с малиновым джемом</h2> <a href="#" aria-label="Купить">Давайте оба!</a> </li>
+            <li> <img src="img/content/slide2.png" alt="">
+              <h2>Шоколадный пломбир и лимонный сорбет</h2> <a href="#" aria-label="Купить">Давайте оба!</a> </li>
+            <li> <img src="img/content/slide3.png" alt="">
+              <h2>Пломбир с памадкой и клубничный щербет</h2> <a href="#" aria-label="Купить">Давайте оба!</a> </li>
+          </ul>
+          <div class="slider_control">
+            <button></button>
+            <button></button>
+            <button></button>
           </div>
-          <div>
-            <p>Цена: 100₽ - 500₽</p>
-            <input name="price" type="range" min="100" max="500" step="1"> </div>
-          <div>
-            <p>Жирность:</p>
-            <p>
-              <input name="fat" id="fat1" type="radio" value="0%">
-              <label for="fat1">0%</label>
-            </p>
-            <p>
-              <input name="fat" id="fat2" type="radio" value="до 10%" checked>
-              <label for="fat2">до 10%</label>
-            </p>
-            <p>
-              <input name="fat" id="fat3" type="radio" value="до 30%">
-              <label for="fat3">до 30%</label>
-            </p>
-            <p>
-              <input name="fat" id="fat4" type="radio" value="выше 30%">
-              <label for="fat4">выше 30%</label>
-            </p>
-          </div>
-          <div>
-            <p>Наполнители:</p>
-            <p>
-              <input name="fillers" id="fillers1" type="checkbox" value="шоколадные" checked="">
-              <label for="fillers1"> шоколадные</label </p>
-              <p>
-                <input name="fillers" id="fillers2" type="checkbox" value="сахарные присыпки" checked="">
-                <label for="fillers2">сахарные присыпки</label>
-              </p>
-              <p>
-                <input name="fillers" id="fillers3" type="checkbox" value="фрукты">
-                <label for="fillers3"> фрукты</label </p>
-                <p>
-                  <input name="fillers" id="fillers4" type="checkbox" value="сиропы">
-                  <label for="fillers4">сиропы</label>
-                </p>
-                <p>
-                  <input name="fillers" id="fillers5" type="checkbox" value="джемы">
-                  <label for="fillers5">джемы</label>
-                </p>
-          </div>
-          <div>
-            <button type="submit">Применить</button>
-          </div>
-        </form>
-      </section>
-      <section>
-        <ul>
+        </div>
+        <article>
+          <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого,добавим
+            <br> в ваш заказ банку малинового варенья бесплатно. </p> <a href="#" aria-label="Купить">Хочу варенье!</a> </article>
+        <article>
+          <h2>Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира,добавим в ваш заказ упаковку
+            <br> вкуснейшей шоколадной присыпки совершенно бесплатно. </p> <a href="#" aria-label="Купить">Хочу шоколадки!</a> </article>
+        <div>
           <li> <img src="img/content/hit1.png" width="" height="" alt="">
             <p class="price">310₽/кг</p>
             <h3 class="info"><a href="#">
@@ -174,61 +132,59 @@
             <h3 class="info"><a href="#">Сливочное крем-брюле с<br>
               карамельной подливкой</a>
             </h3> </li>
-          <li> <img src="img/content/catalog5.png" width="" height="" alt="">
-            <p class="price">325₽/кг</p>
-            <h3 class="info"><a href="#">Сливочное с брусничным<br>
-              джемом</a>
-            </h3> </li>
-          <li> <img src="img/content/catalog6.png" width="" height="" alt="">
-            <p class="price">410₽/кг</p>
-            <h3 class="info"><a href="#">Сливочно-черничное с цельными<br>
-              я годами черники</a>
-            </h3> </li>
-          <li> <img src="img/content/catalog7.png" width="" height="" alt="">
-            <p class="price">375₽/кг</p>
-            <h3 class="info"><a href="#">Сливочно-лимонное с<br>
-              карамельной присыпкой</a>
-            </h3> </li>
-          <li> <img src="img/content/catalog8.png" width="" height="" alt="">
-            <p class="price">320₽/кг</p>
-            <h3 class="info"><a href="#">Сливочное с шоколадной<br>
-              стружкой</a>
-            </h3> </li>
-          <li> <img src="img/content/catalog9.png" width="" height="" alt="">
-            <p class="price">440₽/кг</p>
-            <h3 class="info"><a href="#">Сливочно-ванильное с<br>
-              кусочками шоколада</a>
-            </h3> </li>
-          <li> <img src="img/content/catalog10.png" width="" height="" alt="">
-            <p class="price">435₽/кг</p>
-            <h3 class="info"><a href="#">Сливочное с ментоловым<br>
-              cиропом</a>
-            </h3> </li>
-          <li> <img src="img/content/catalog11.png" width="" height="" alt="">
-            <p class="price">355₽/кг</p>
-            <h3 class="info"><a href="#">Сливочное с кусочками черного<br>
-              шоколада</a>
-            </h3> </li>
-          <li> <img src="img/content/catalog12.png" width="" height="" alt="">
-            <p class="price">420₽/кг</p>
-            <h3 class="info"><a href="#">Сливочное с мятным сиропом</a></h3> </li>
+        </div>
+      </section>
+      <section>
+        <h2>Магазин Глэйси - это онлайн и офлайн-магазин по продаже мороженого собственного<br>
+          производства на развес
+        </h2>
+        <ul>
+          <li>Все наше мороженое изготавливается на собственном
+            <br> производстве, с использованием современного оборудования
+            <br> и проверенных временем технологий. </li>
+          <li>Для приготовления мороженого используются настоящие
+            <br> сливки и молоко высочайшего качества.Все дополнительные
+            <br> ингредиенты и добавки произведены из натурального,
+            <br> экологически чистого сырья. </li>
+          <li>Закупка ингредиентов производится только у проверенных
+            <br> фермерских хозяйств и компаний, с которыми нас связывает
+            <br> долговременное сотрудничество. </li>
+          <li>Доставка нашего мороженого до заказчиков осуществляется
+            <br> в специальном термопаке, который не дает мороженому
+            <br> растаять в пути и позволяет сохранить превосходный вкус. </li>
         </ul>
       </section>
-      <div>
-        <ul>
-          <li>
-            <a href="#"> <img src="img/decor/icon-left-small.svg" alt="На страницу назад"> </a>
-          </li>
-          <li><a href="#" aria-label="Страница 1">1</a></li>
-          <li><a href="#" aria-label="Страница 2">2</a></li>
-          <li><a href="#" aria-label="Страница 3">3</a></li>
-          <li><a href="#" aria-label="Страница 4">4</a></li>
-          <li><a href="#" aria-label="Страница 5">5</a></li>
-          <li>
-            <a href="#"> <img src="img/decor/icon-right-small.svg" alt="На страницу вперед"> </a>
-          </li>
-        </ul>
-      </div>
+      <article>
+        <p>Новое в нашем блоге</p>
+        <h2><a href="#">
+          10 способов сервировки<br>
+          фруктовых щербетов к<br>
+          столу</a>
+        </h2> </article>
+      <article>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p> Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <input type="email" name="mail" placeholder="Электронная почта">
+          <button type="submit">Отправить</button>
+        </form>
+      </article>
+      <article> <img src="img/content/map.png" alt="Как до нас добраться"> <img src="img/decor/pin.svg" alt="Мы находимся здесь"> </article>
+      <article class="communication">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h2>Мы обязательно вам ответим!</h2>
+          <a href="index.html"> <img src="img/decor/cross-big.svg" alt="Закрыть форму"> </a>
+          <p>
+            <input type="text" name="name" placeholder="Как вас зовут?" required> </p>
+          <p>
+            <input type="email" name="email" placeholder="Ваша почта для ответа?" required> </p>
+          <p>
+            <textarea name="message" rows="7" cols="35" placeholder="Напишите что нибудь..."></textarea>
+          </p>
+          <p>
+            <button type="submit">Отправить</button>
+          </p>
+        </form>
+      </article>
     </main>
     <footer>
       <section>
