@@ -15,18 +15,35 @@
 					<li><a href="#">Доставка и оплата</a></li>
 					<li><a href="#">О Компании</a></li>
 				</ul>
+
 				<div class="search">
-					<form action="https://echo.htmlacademy.ru" method="get">
-						<button id="search" type="submit">Поиск</button>
-					</form>
-				</div>
-				<div class="login">
-					<a href="#">Вход</a>
-				</div>
-				<div class="basket-red">
-					<a href="#" aria-label="Корзина">2 товара</a>
-				</div>
-				<div class="basket_form">
+       	 			<a href="#">Поиск</a>
+        		<div class="search_form">
+          		<form action="https://echo.htmlacademy.ru" method="get">
+            		<button id="search" type="submit" aria-label="Поиск"><!--Поиск --></button>
+            		<input type="search" name="search" placeholder="Что ищем?"> </form>
+       			</div>
+       			</div>
+
+			<div class="login">
+        			<a href="#" >Вход</a>
+        		<div class="login_form">
+         		 <form action="https://echo.htmlacademy.ru" method="post">
+            	 <p>
+              	 <input type="email" name="email" placeholder="Электронная почта" required> </p>
+            	 <p>
+              	 <input type="password" name="password" placeholder="Пароль" required> </p>
+            	 <p>
+              	 <button type="submit">Войти</button>
+            	 </p>
+            <p><a href="#">Забыли пароль?</a> <a href="#">Новая регистрация</a> </p>
+          		 </form>
+       			</div>
+      		</div>
+
+			<div class="basket_red">
+				<a href="#" aria-label="Корзина">2 товара</a>
+				<div class="basket_red_form">
 				<form action="https://echo.htmlacademy.ru" method="post">
 						<ul>
 							<li>
@@ -44,6 +61,7 @@
 						<button type="submit">Оформить заказ</button>
 				</form>
 				</div>
+			</div>
 			</nav>
 			<p> C 10 до 20, ежедневно
 				<br> <a href="#">
@@ -189,7 +207,7 @@
 			<div>
 				<ul>
 					<li>
-						<a href="#"> <img src="img/decor/icon-left-small.svg" alt="На страницу назад"> </a>
+						<a href="#"> < </a>
 					</li>
 					<li><a href="#" aria-label="Страница 1">1</a></li>
 					<li><a href="#" aria-label="Страница 2">2</a></li>
@@ -197,7 +215,7 @@
 					<li><a href="#" aria-label="Страница 4">4</a></li>
 					<li><a href="#" aria-label="Страница 5">5</a></li>
 					<li>
-						<a href="#"> <img src="img/decor/icon-right-small.svg" alt="На страницу вперед"> </a>
+						<a href="#"> > </a>
 					</li>
 				</ul>
 			</div>
