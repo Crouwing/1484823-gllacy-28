@@ -35,6 +35,10 @@
   display: none;
 }
 
+*, *::before, *::after {
+box-sizing: border-box;
+} 
+
 body {
   background-color: var(--fon-color);
   font-family: 'Roboto', Arial, sans-serif;
@@ -54,16 +58,10 @@ a {
  .button {
   margin: 0;
   padding: 0;
-  width: 164px;
-  height: 48px;
   background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
   border-radius: 70px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  padding-top: 15px;
-  padding-left: 22px;
-  padding-bottom: 16px;
-  padding-right: 22px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
@@ -81,7 +79,7 @@ a {
 
 .container {
   width: 1146px;
-  border: 5px solid #0000ff;
+  border: 2px solid #0000ff;
   margin: 0 auto;
 }
 
@@ -101,16 +99,12 @@ a {
   font-weight: bold;
   color: var(--basic-white-text);
   list-style-type: none;
-  padding-top: 23px;
-}
-
-.main_navigation li:nth-child(1) {
+  margin-top: 23px;
   margin-left: 24px;
-  margin-right: 32px;
 }
 
-.main_navigation li:nth-child(3) {
-  margin-left: 32px;
+.main_navigation li {
+  margin-right: 32px;
 }
 
 .main_navigation a {
@@ -120,9 +114,9 @@ a {
 
 .user_navigation {
   display: flex;
-  border: 5px solid #ff0fff;
-  width: 244px;
-  height: 32px;
+  justify-content: flex-end;
+  border: 2px solid #ff0fff;
+  margin-top: 23px;
   margin-left: auto;
 
 }
@@ -159,6 +153,10 @@ a {
 
 /* Поиск */
 
+.search {
+  margin-right: 10px;
+}
+
 .search_icon { 
   width: 16px;
   height: 16px;  
@@ -166,6 +164,10 @@ a {
 }
 
 /* Логин */
+
+.login {
+  margin-right: 10px;
+}
 
 .login a {
   font-style: normal;
@@ -251,6 +253,23 @@ a {
 
 /* Время работы и тел */
 
+.contacts {
+  display: flex;
+  justify-content: flex-end;
+  width: 171px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 20px;
+  border: 2px solid #fff445;
+  margin-left: auto;
+}
+
+.contacts p {
+  margin: 0;
+}
+
 .phone  {
   font-style: normal;
   font-weight: bold;
@@ -262,18 +281,7 @@ a {
   color: var(--basic-white-text);
 }
 
-.contacts {
-  width: 167px;
-  height: 48px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  padding-top: 0px;
-  margin-left: auto;
-  margin-top: 20px;
-  border: 5px solid #fff445;
-}
+
 
 /* Слайдеры на главной */
 
@@ -281,7 +289,9 @@ a {
   width: 647px;
   height: 584px;
   display: flex;
-  position: relative;
+  /*position: relative;
+  bottom: 50px;
+  right: 20px;*/
   padding-top: 0px;
   text-align: center;
   color: #ffffff;
@@ -307,8 +317,6 @@ a {
   margin: 0 auto;
   width: 672px;
   height: 119px;
-  padding-top: 315px;
-  padding-bottom: 27px;
 }
 
 .slider a {
@@ -421,11 +429,14 @@ a {
 
 .raspberry {
   width: 560px;
-  height: 229px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 22px;
+  padding-bottom: 22px;
   border-radius: 16px;
   background-color: var(--Raspberry-color);
   background-image: url(../img/fon/crimson-background.png);
@@ -436,13 +447,11 @@ a {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-bottom: 16px;
-  margin-right: : 271px;
+  margin: 0;
 }
 
 .raspberry a {
+  display: inline-block;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -451,17 +460,18 @@ a {
 }
 
 .raspberry p {
+  max-width: 514px;
+  margin: 0;
   margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 30px;
-  margin-bottom: 42px;
 }
 
 .button_raspberry {
-  margin-top: 42px;
-  margin-left: 374px;
-  margin-bottom: 22px;
-  margin-right: 22px;
+  margin-top: 35px;
+  margin-left: 358px;
+  padding-top: 15px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 16px;
 }
 
 
@@ -469,11 +479,14 @@ a {
 
 .chocolate {
   width: 560px;
-  height: 229px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 22px;
+  padding-bottom: 22px;
   border-radius: 16px;
   background-color: var(--Chocolate-color);
   background-image: url(../img/fon/chocolate-background.png);
@@ -484,13 +497,12 @@ a {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-bottom: 16px;
-  margin-right: : 227px;
+  margin: 0;
+
 }
 
 .chocolate a {
+  display: inline-block;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -499,17 +511,18 @@ a {
 }
 
 .chocolate p {
+  margin: 0;
   margin-top: 16px;
-  margin-left: 16px;
-  margin-bottom: 42px;
-  margin-right: : 30px;
 }
 
 .button_chocolate {
-  margin-top: 16px;
-  margin-left: 347px;
-  margin-bottom: 22px;
-  margin-right: : 22px;
+  margin-left: 332px;
+  margin-top: 34px;
+  padding-top: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 15px;
+
 }
 
 /* Хиты */
@@ -521,12 +534,6 @@ a {
   line-height: 45px;
 }
 
-.hits p {
-  margin-top: -70px;
-  padding: 0px;
-  border: 5px solid #ff00ff;
-}
-
 .kg {
   font-style: normal;
   font-weight: bold;
@@ -535,14 +542,32 @@ a {
 }
 
 .hits {
-  width: 1146px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hits h3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 13px;
+  bottom: 48px;
+}
+
+.hits p {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  bottom: 65px;
+ /* border: 5px solid #ff00ff;*/
 }
 
 .hits a {
   color: var(--basic-white-text);
   text-decoration: underline;
-  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -551,30 +576,31 @@ a {
 .hits ul {
   list-style-type: none;
   display: flex;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  /*padding-left: 27px;
+  padding-right: 27px;*/
 }
 
 .hits li {
   width: 267px;
-  margin-top: 40px;
-}
-
-.hits li:nth-child(2) {
-  margin-left: 26px;
   margin-right: 26px;
 }
 
-.hits li:nth-child(3) {
-  margin-right: 26px;
+.hits li:nth-child(4) {
+  margin-right: 0px;
 }
 
 /* Преимущества, вафельный фон */
 
 .advantages {
-  border:1px dashed transparent;
-  width: 1146px;
-  height: 306px;
+  /*border:1px dashed transparent;*/
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 23px;
+  padding-bottom: 36px;
   border-radius: 16px;
   color: var(--basic-dark-text);
   background-color: var(--Pattern-color);
@@ -583,12 +609,8 @@ a {
 }
 
 .advantages h2 {
-  width: 995px;
-  height: 60px;
-  margin-top: 24px;
-  margin-left: 20px;
-  margin-right: 131px;
-  margin-bottom: 7px;
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -607,78 +629,29 @@ a {
 }
 
  .ice_cream {
-width: 485px;
-height: 55px;
-border: 1px solid #ff00ff;
-margin-top: 21px;
-margin-bottom: 33px;
-margin-right: 26px;
+  max-width: 485px;
+  margin-top: 21px;
+  margin-right: 26px;
+  border: 1px solid #ff00ff;
 }
 
 .cow {
-width: 482px;
-height: 55px;
-border: 1px solid #ff00ff;
-margin-top: 21px;
-margin-right: 17px;
-margin-bottom: 33px;
+  max-width: 482px;
+  margin-top: 21px;
+  border: 1px solid #ff00ff;
 }
 
 .eco {
-width: 484px;
-height: 77px;
-border: 1px solid #ff00ff;
-margin-bottom: 36px;
-
+  max-width: 484px;
+  margin-top: 33px;
+  margin-right: 27px;
+  border: 1px solid #ff00ff;
 }
 
 .thermometer {
-width: 484px;
-height: 55px;
-border: 1px solid #ff00ff;
-margin-right: 17px;
-}
-
-
-
-
-.cow_pic {
-  width: 49px;
-  height: 49px;
-  background-image: url(../img/decor/cow.svg);
-  background-repeat: no-repeat;
-  margin-right: 6px;
-  margin-bottom: 39px;
-}
-
-.ice_cream_pic {
-  width: 49px;
-  height: 49px;
-  background-image: url(../img/decor/ice-cream.svg);
-  background-repeat: no-repeat;
-  margin-left: 20px;
-  margin-bottom: 39px;
-  margin-right: 6px;
-}
-
-.eco_pic {
-  width: 49px;
-  height: 49px;
-  background-image: url(../img/decor/eco.svg);
-  background-repeat: no-repeat;
-  margin-left: 20px;
-  margin-bottom: 78px;
-  margin-right: 6px;
-}
-
-.thermometer_pic {
-  width: 49px;
-  height: 49px;
-  background-image: url(../img/decor/thermometer.svg);
-  background-repeat: no-repeat;
-  margin-left: 27px;
-  margin-bottom: 78px;
-  margin-right: 6px;
+  max-width: 484px;
+  margin-top: 33px;
+  border: 1px solid #ff00ff;
 }
 
 /* 10 способов сервировки */
@@ -692,33 +665,31 @@ margin-right: 17px;
 
 .sherbets {
   width: 560px;
-  height: 220px;
   border-radius: 16px;
+  padding-top: 23px;
+  padding-left: 20px;
   background-color: var(--basic-mail);
   background-image: url(../img/fon/strawberry-background.png);
+  background-size: cover;
 }
 
 .sherbets p {
+  margin: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-dark-text);
-  margin-left: 20px;
-  margin-top: 23px;
 }
 
 .sherbets h2 {
-  width: 287px;
-  height: 77px;
+  max-width: 287px;
+  margin: 0;
+  margin-top: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  margin-left: 20px;
-  margin-right: 253px;
-  margin-top: 15px;
-  margin-bottom: 94px;
 }
 
 .sherbets a{
@@ -733,15 +704,18 @@ margin-right: 17px;
   justify-content: center;
   align-content: center;
   width: 560px;
-  height: 220px;
   border-radius: 16px;
   background-color: var(--basic-mail);
   background-image: url(../img/fon/mail-background.png);
+  background-size: cover;
 }
 
 .mail {
   width: 548px;
-  height: 210px;
+  padding-top: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 28px;
   border-radius: 16px;
   background-color: #F8F7F4;
   margin: 0 auto;
@@ -751,27 +725,21 @@ margin-right: 17px;
 }
 
 .mail p {
+  margin: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-mail-text);
-  margin-left: 20px;
-  margin-top: 29px;
-  margin-bottom: 47px;
-  margin-right: 16px;
 }
 
 .email {
   width: 368px;
   height: 44px;
-  margin-left: 20px;
-  margin-bottom: 35px;
+  margin-top: 47px;
 }
 
 .button_email {
-  width: 130px;
-  height: 44px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -782,25 +750,27 @@ margin-right: 17px;
   padding-right: 19px;
   padding-top: 14px;
   padding-bottom: 13px;
+  margin-left: 6px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   border: 0;
-  margin-left: 10px;
-  margin-bottom: 36px;
-  margin-right: 12px;
-  /*margin-top: 46px;*/
 }
 
 
 /* Данные для связи на карте */
 
 .feedback_map {
+  position: absolute;
+  top: 1948px;
+  left: 870px;;
   margin: 0;
   padding: 0;
-  border:1px dashed transparent;
   background-color: #FEFEFE;
   border-radius: 16px;
   width: 303px;
-  height: 306px;
+  padding-top: 32px;
+  padding-left: 25px;
+  padding-bottom: 44px;
+  padding-right: 25px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -808,49 +778,38 @@ margin-right: 17px;
   color: var(--basic-dark-text)
 }
 
-.adress {
-  margin-top: 32px;
-  margin-left: 25px;
-  margin-right: 123px;
-  margin-bottom: 8px;
-}
 
-
-.feedback_map .address_map {
+ .address_bold {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-dark-text);
-  margin-right: 53px;
-  margin-bottom: 30px;
-  margin-left: 25px;
   width: 225px;
-  height: 37px;
+  margin: 0;
+  margin-top: 8px;
 }
 
 .phone_feedback {
-  margin-left: 25px;
-  margin-right: 106px;
-  margin-bottom: 11px;
-
+  margin-top: 30px;
+  margin-bottom: 44px;
 }
 
-.feedback_map .phone_map {
+
+ .phone_bold {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-dark-text);
-  margin-left: 25px;
+  margin: 0;
+  margin-top: 11px;
   margin-bottom: 8px;
-  margin-top: 0;
+
 
 }
 
-.feedback_map_button  {
-  width: 253px;
-  height: 43px;
+.feedback_map_button   {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -860,10 +819,8 @@ margin-right: 17px;
   padding-bottom: 13px;
   padding-left: 28px;
   padding-right: 28px;
-  margin-left: 22px;
-  margin-top: 31px;
-
 }
+
 
  /* Форма обратной связи */
 
@@ -981,19 +938,27 @@ margin-right: 17px;
   /*Футер*/
 
 .footer {
-  border: 5px solid #FF00FF;
+  border: 2px solid #FF00FF;
   width: 1144px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
   
 /* Соц сети */
 
 .social_networks ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 36px;
+  margin-left: 29px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.social_networks li {
+  margin-right: 12px;
 }
 
 .social_networks a {
@@ -1009,21 +974,18 @@ margin-right: 17px;
   width: 32px;
   height: 32px;
   background-image: url(../img/decor/fb.svg);
-  margin-right: 12px;
  }
 
  .vk {
   width: 32px;
   height: 32px;
   background-image: url(../img/decor/vk.svg);
-  margin-right: 12px;
  }
 
 .instagram {
   width: 32px;
   height: 32px;
   background-image: url(../img/decor/instagram.svg);
-  margin-right: 12px;
  }
 
  .twitter {
@@ -1038,14 +1000,27 @@ margin-right: 17px;
   display: flex;
   flex-wrap: wrap;
   width: 327px;
-  border: 5px solid #ff00ff;
+  border: 1px solid #ff00ff;
  }
 
  .about_us ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin-top: 36px;
+  margin-bottom: 30px;
+  line-height: 11px;
  }
+
+
+ .about_us li:nth-child(1) {
+  margin-right: 32px;
+}
+
+.about_us li:nth-child(3) {
+  margin-right: 44px;
+}
 
  .about_us a {
   font-style: normal;
@@ -1056,11 +1031,6 @@ margin-right: 17px;
    text-decoration: underline;
  }
 
- .heart {
-  width: 15px;
-  height: 13px;
-  background-image: url(../img/decor/heart.svg);
- }
 
  .for_suppliers {
   font-style: normal;
@@ -1073,12 +1043,11 @@ margin-right: 17px;
 
   /* Сделано в HtmlAcademy (Подвал) */
 
-  .html_academy {
-    width: 190px;
-    height: 60px;
-  }
-
   .html_academy p {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 26px;
+  margin-right: 27px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
