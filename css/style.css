@@ -598,10 +598,6 @@ a {
 }
 
 
-.hits li:nth-child(4) {
-  margin-right: 0px;
-}
-
 /* Преимущества, вафельный фон */
 
 .advantages {
@@ -1057,24 +1053,15 @@ a {
   margin-top: 36px;
   margin-left: 29px;
   list-style-type: none;
-/*  display: flex;
-  flex-wrap: wrap;*/
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.social_networks li {
-  margin-right: 12px;
+  grid-template-columns: 32px 32px 32px 32px;
+  column-gap: 12px;
 }
 
 .social_networks a {
   color: var(--basic-white-text);
 }
 
-.social_networks {
-  display: flex;
-
-}
 
 .facebook {
   width: 32px;
