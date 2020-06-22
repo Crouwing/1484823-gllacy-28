@@ -53,6 +53,18 @@ a {
   text-decoration: none
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+
 /*Кнопки и состояние на баннерах */
 
  .button {
@@ -420,8 +432,9 @@ a {
   /*Малиновый + шоколадный банер*/
 
 .hit {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 560px 560px;
+  column-gap: 22px;
 }
 
 
@@ -546,10 +559,22 @@ a {
   margin-bottom: 40px;
 }
 
-.hits h3 {
+.hits ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 267px 267px 267px 267px;
+  column-gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.hits li {
   position: relative;
-  display: flex;
-  justify-content: center;
+  width: 267px;
+  margin-right: 26px;
+}
+
+.hits h3 {
   text-align: center;
   margin: 0;
   padding: 0;
@@ -558,11 +583,10 @@ a {
 }
 
 .hits p {
-  position: relative;
+  position: absolute;
   padding: 0;
   margin: 0;
-  bottom: 65px;
- /* border: 5px solid #ff00ff;*/
+  bottom: 75px;
 }
 
 .hits a {
@@ -573,19 +597,6 @@ a {
   line-height: 22px;
 }
 
-.hits ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  /*padding-left: 27px;
-  padding-right: 27px;*/
-}
-
-.hits li {
-  width: 267px;
-  margin-right: 26px;
-}
 
 .hits li:nth-child(4) {
   margin-right: 0px;
@@ -632,7 +643,7 @@ a {
   max-width: 485px;
   margin-top: 21px;
   margin-right: 26px;
-  border: 1px solid #ff00ff;
+  border: 2px solid #ff00ff;
 }
 
 .cow {
@@ -654,20 +665,22 @@ a {
   border: 1px solid #ff00ff;
 }
 
-/* 10 способов сервировки */
+ /*Сервировка + рассылка*/
 
-.news {
-  display: flex;
-  justify-content: space-between;
+ .news {
+  display: grid;
+  grid-template-columns: 560px 560px;
+  column-gap: 22px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
+/* 10 способов сервировки */
+
 .sherbets {
   width: 560px;
   border-radius: 16px;
-  padding-top: 23px;
-  padding-left: 20px;
+  padding: 21px;
   background-color: var(--basic-mail);
   background-image: url(../img/fon/strawberry-background.png);
   background-size: cover;
@@ -758,10 +771,19 @@ a {
 
 /* Данные для связи на карте */
 
+.map_img {
+  height: 430px;
+  width: 1200px;
+}
+
+.map {
+  position: relative;
+}
+
 .feedback_map {
   position: absolute;
-  top: 1948px;
-  left: 870px;;
+  top: 62px;
+  left: 870px;
   margin: 0;
   padding: 0;
   background-color: #FEFEFE;
@@ -769,7 +791,7 @@ a {
   width: 303px;
   padding-top: 32px;
   padding-left: 25px;
-  padding-bottom: 44px;
+  padding-bottom: 39px;
   padding-right: 25px;
   font-style: normal;
   font-weight: normal;
@@ -787,12 +809,11 @@ a {
   color: var(--basic-dark-text);
   width: 225px;
   margin: 0;
-  margin-top: 8px;
 }
 
 .phone_feedback {
   margin-top: 30px;
-  margin-bottom: 44px;
+  margin-bottom: 29px;
 }
 
 
@@ -803,10 +824,6 @@ a {
   line-height: 24px;
   color: var(--basic-dark-text);
   margin: 0;
-  margin-top: 11px;
-  margin-bottom: 8px;
-
-
 }
 
 .feedback_map_button   {
@@ -843,6 +860,9 @@ a {
    /*Catalog.html*/
 
 .breadcrumb{
+  display: flex;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   font-style: normal;
   font-weight: normal;
@@ -868,7 +888,23 @@ a {
   color: var(--basic-white-text);
 }
 
+.breadcrumb li {
+  margin-right: 22px;
+}
+
   /*Фильтр*/
+
+  .filter fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+}
+
+.filter_form {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .filter_item {
   font-style: normal;
@@ -884,13 +920,6 @@ a {
   font-size: 16px;
   line-height: 18px;
   list-style-type: none;
-}
-
-.button_filter {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
 }
 
 .sort {
@@ -909,21 +938,96 @@ a {
   color: var(--basic-dark-text);
 }
 
- /*Каталог*/
+.fatness {
+  display: flex;
+  padding: 0;
+}
 
- .Products {
+.fatness li {
+  margin-right: 19px;
+}
+
+.fillers {
+  display: flex;
+  padding: 0;
+}
+
+.fillers li {
+  margin-right: 22px;
+}
+
+.button_filter {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white-text);
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-left: 27px;
+  padding-bottom: 7px;
+  padding-right: 27px;
+}
+
+ /*КАТАЛОГ*/
+
+ .products {
+  display: grid;
+  grid-template-columns: 267px 267px 267px 267px;
+  column-gap: 25px;
+  row-gap: 40px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
-.ice_cream a {
+.ice_cream_catalog {
+  margin-top: 40px;
+  margin-bottom: 83px;
+}
+
+.ice_cream_catalog a {
   color: var(--basic-white-text);
   text-decoration: underline;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.products li {
+  position: relative;
+  text-align: center;
+  width: 266px;
+}
+
+.products p {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 85px;
+}
+
+.info {
+  margin: 0;
+  margin-top: 17px;
 }
 
   /*Список страниц в каталоге*/
 
 .catalog_page {
   list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 27px;
+  margin-bottom: 37px;
+}
+
+.catalog_page li {
+  margin-right: 20px;
 }
 
 .catalog_page a {
@@ -953,8 +1057,10 @@ a {
   margin-top: 36px;
   margin-left: 29px;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+/*  display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .social_networks li {
@@ -997,30 +1103,23 @@ a {
  /* "О нас" (подвал) */
 
  .about_us {
-  display: flex;
-  flex-wrap: wrap;
   width: 327px;
   border: 1px solid #ff00ff;
  }
 
  .about_us ul {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+/*  display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
   padding: 0;
   margin-top: 36px;
   margin-bottom: 30px;
   line-height: 11px;
  }
 
-
- .about_us li:nth-child(1) {
-  margin-right: 32px;
-}
-
-.about_us li:nth-child(3) {
-  margin-right: 44px;
-}
 
  .about_us a {
   font-style: normal;
@@ -1040,7 +1139,6 @@ a {
  }
 
 
-
   /* Сделано в HtmlAcademy (Подвал) */
 
   .html_academy p {
@@ -1058,7 +1156,7 @@ a {
 
 
 
-
+ 
 
 
 
