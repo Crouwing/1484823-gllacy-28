@@ -128,7 +128,7 @@ a {
   display: flex;
   justify-content: flex-end;
   border: 2px solid #ff0fff;
-  margin-top: 23px;
+  margin-top: 14px;
   margin-left: auto;
 
 }
@@ -166,10 +166,16 @@ a {
 /* Поиск */
 
 .search {
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
   margin-right: 10px;
 }
 
 .search_icon { 
+  display: block;
   width: 16px;
   height: 16px;  
   background-image: url(../img/decor/loupe.svg);
@@ -178,7 +184,13 @@ a {
 /* Логин */
 
 .login {
+  position: relative;
+  padding: 5px 16px 8px 44px;
   margin-right: 10px;
+  width: 92px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
 }
 
 .login a {
@@ -187,6 +199,17 @@ a {
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-white-text);
+}
+
+.login a::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+
+  width: 20px;
+  height: 19px;
+  background-image: url(../img/decor/login_white.svg);
+  background-repeat: no-repeat;
 }
 
 .login a:hover {
@@ -212,17 +235,43 @@ a {
 /* Корзина пустая */
 
 .empty_basket {
+  position: relative;
+  padding: 5px 16px 8px 45px;
+  width: 100px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.empty_basket a {
+  color: var(--basic-white-text);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
 
-.empty_basket a {
-  color: var(--basic-white-text);
+.empty_basket a::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+
+  width: 21px;
+  height: 20px;
+  background-image: url(../img/decor/basket.svg);
+  background-repeat: no-repeat;
 }
 
  /*Корзина с товарами*/
+
+.basket_red {
+  position: relative;
+  padding: 5px 16px 9px 44px;
+  width: 118px;
+  height: 32px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
 
  .basket_red a {
   font-style: normal;
@@ -231,6 +280,17 @@ a {
   line-height: 16px;
   color: var(--basic-dark-text);
  }
+
+ .basket_red a::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+
+  width: 21px;
+  height: 20px;
+  background-image: url(../img/decor/basket-red.svg);
+  background-repeat: no-repeat;
+}
 
  .product_basket {
   font-style: normal;
@@ -272,8 +332,8 @@ a {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
-  margin-top: 20px;
+  line-height: 24px;
+  margin-top: 2px;
   border: 2px solid #fff445;
   margin-left: auto;
 }
@@ -287,12 +347,8 @@ a {
   font-weight: bold;
   font-size: 22px;
   line-height: 24px;
+  color: var(--basic-white-text)
 }
-
-.contacts a {
-  color: var(--basic-white-text);
-}
-
 
 
 /* Слайдеры на главной */
@@ -571,8 +627,19 @@ a {
 .hits li {
   position: relative;
   width: 267px;
-  margin-right: 26px;
 }
+
+.hits li::before {
+  content: "";
+  position: absolute;
+  bottom: 267px;
+
+  width: 61px;
+  height: 61px;
+  background-image: url(../img/decor/hit.svg);
+  background-repeat: no-repeat;
+}
+
 
 .hits h3 {
   text-align: center;
@@ -605,8 +672,8 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 24px;
-  padding-left: 24px;
-  padding-right: 23px;
+  padding-left: 20px;
+  padding-right: 22px;
   padding-bottom: 36px;
   border-radius: 16px;
   color: var(--basic-dark-text);
@@ -629,6 +696,7 @@ a {
 .advantages ul {
   padding: 0px;
   margin: 0px;
+  margin-left: 51px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -636,29 +704,81 @@ a {
 }
 
  .ice_cream {
+  position: relative;
   max-width: 485px;
   margin-top: 21px;
-  margin-right: 26px;
+  margin-right: 81px;
   border: 2px solid #ff00ff;
 }
 
+.ice_cream::before {
+  content: "";
+  position: absolute;
+  right: 485px;
+  bottom: 16px;
+
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/decor/ice-cream.svg);
+  background-repeat: no-repeat;
+}
+
 .cow {
+  position: relative;
   max-width: 482px;
   margin-top: 21px;
   border: 1px solid #ff00ff;
 }
 
+.cow::before {
+  content: "";
+  position: absolute;
+  right: 485px;
+  bottom: 16px;
+
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/decor/cow.svg);
+  background-repeat: no-repeat;
+}
+
 .eco {
+  position: relative;
   max-width: 484px;
   margin-top: 33px;
-  margin-right: 27px;
+  margin-right: 81px;
   border: 1px solid #ff00ff;
 }
 
+.eco::before {
+  content: "";
+  position: absolute;
+  right: 485px;
+  bottom: 34px;
+
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/decor/eco.svg);
+  background-repeat: no-repeat;
+}
+
 .thermometer {
+  position: relative;
   max-width: 484px;
   margin-top: 33px;
   border: 1px solid #ff00ff;
+}
+
+.thermometer::before {
+  content: "";
+  position: absolute;
+  right: 485px;
+  bottom: 34px;
+
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/decor/thermometer.svg);
+  background-repeat: no-repeat;
 }
 
  /*Сервировка + рассылка*/
@@ -770,16 +890,36 @@ a {
 .map_img {
   height: 430px;
   width: 1200px;
+  position: relative; 
+}
+
+.map_img::before {
+  content: "";
+  position: absolute;
+  right: 885px;
+  bottom: 154px;
+
+  width: 80px;
+  height: 140px;
+  background-image: url(../img/decor/pin.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.map_img img {
+  position: absolute;
+  right: 31px;
 }
 
 .map {
   position: relative;
 }
 
+
 .feedback_map {
   position: absolute;
   top: 62px;
-  left: 870px;
+  left: 839px;
   margin: 0;
   padding: 0;
   background-color: #FEFEFE;
@@ -1119,11 +1259,24 @@ a {
 
 
  .for_suppliers {
+  position: relative;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
   line-height: 18px;
  }
+
+ .for_suppliers::before {
+  content: "";
+  position: absolute;
+  right: 115px;
+  top: 2px;
+
+  width: 15px;
+  height: 13px;
+  background-image: url(../img/decor/heart.svg);
+  background-repeat: no-repeat;
+}
 
 
   /* Сделано в HtmlAcademy (Подвал) */
@@ -1139,6 +1292,11 @@ a {
   line-height: 18px;
   color: var(--basic-white-text);
   }
+  .html_academy a{
+    color: var(--basic-white-text);
+    text-decoration: underline;
+  }
+
 
 
 
