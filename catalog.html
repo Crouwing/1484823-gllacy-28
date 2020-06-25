@@ -32,58 +32,59 @@
 	    </ul>
 	    
 	    <div class="user_navigation">
-	    <div class="search">
-	    <a href="#"><div class="search_icon"></div></a>
-	    <div class="search_form">
-	      <form action="https://echo.htmlacademy.ru" method="get">
-	        <button id="search" type="submit" aria-label="Поиск"><!--Поиск --></button>
-	        <input type="search" name="search" placeholder="Что ищем?"> 
-	        </form>
-	    </div>
-	    </div>
+	     <div class="search">
+  			<a class="search_icon" href="#" aria-label="поиск"></a>
+  			<div class="search_form">
+   		 <form action="https://echo.htmlacademy.ru" method="get">
+     		 <input class="search_box" type="search" name="search" placeholder="Крем-брюле"> 
+      	</form>
+  </div>
+  </div>
 	    
 	    
 	    
 	    <div class="login">
-	    <a href="#" ><span class="login_url">Вход</span></a>
-	    <div class="login_form">
-	      <form action="https://echo.htmlacademy.ru" method="post">
-	        <p>
-	          <input type="email" name="email" placeholder="Электронная почта" required> </p>
-	        <p>
-	          <input type="password" name="password" placeholder="Пароль" required> </p>
-	        <p>
-	          <button class="button button_login" type="submit">Войти</button>
-	        </p>
-	        <p class="authentication_problem"><a href="#">Забыли пароль?</a> <a href="#">Новая регистрация</a></p> 
-	      </form>
-	    </div>
-	  </div>
+  <a class="login_url" href="#" ><span class="login_url">Вход</span></a>
+  <div class="login_form">
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="email" name="email" placeholder="email@example.com" required> 
+        <input type="password" name="password" placeholder="******" required> 
+        <button class="button button_login" type="submit">Войти</button>
+      <ul class="authentication_problem">
+      <li><a href="#">Забыли пароль?</a> </li>
+      <li><a href="#">Новая регистрация</a> </li> 
+      </ul>
+    </form>
+  </div>
+    </div>
 	  
 	   <div class="basket_red">
-	        <a href="#" aria-label="Корзина">2 товара</a>
-	        <div class="basket_red_form visually-hidden">
-	        <form action="https://echo.htmlacademy.ru" method="post">
-	            <ul>
-	              <li>
-	                <p>
-	                <button><img src="img/decor/cross-small.svg" alt="Удалить товар"></button> 
-	                <img src="img/content/hit1.png" alt="" width="25" height="25"> <span class="product_basket">Пломбир с апельсиновым джемом <span class="price_kg">1,5кгх200руб</span>
-	                 300руб</span> </p>
-	              </li>
-	              <li>
-	                <p>
-	                <button><img src="img/decor/cross-small.svg" alt="Удалить товар"></button> 
-	                <img src="img/content/hit3.png" alt="" width="25" height="25"> <span class="product_basket">Клубничный пломбир с присыпкой из белого шоколада
-	                 <span class="price_kg">1,5кгх300руб</span> 450руб</span> </p>
-	              </li>
-	            </ul>
-	            <p class="total">Итого: 750 руб</p>
-	            <button class="button button_place_your_order" type="submit">Оформить заказ</button>
-	        </form>
-	        </div>
-	      </div>
-	  </div>
+          <a href="#" aria-label="Корзина">2 товара</a>
+          <div class="basket_red_form">
+          <form action="https://echo.htmlacademy.ru" method="post">
+              <table class="list_of_goods">
+                <tr>
+                  <th><button><img src="img/decor/cross-small.svg" width="11" height="11" alt="Удалить товар"></button></th>
+                  <th><img class="picture_in_basket" src="img/content/hit1.png" alt="" width="33" height="33"></th>
+                  <th><span class="product_basket">Пломбир с апельсиновым джемом</span></th>
+                  <th><span class="price_kg">1,5 кг х 200 руб.</span></th>
+                  <th><span class="total">300 руб.</span></th>
+                </tr>
+                <tr class="product_2">
+                  <th><button><img src="img/decor/cross-small.svg" width="11" height="11" alt="Удалить товар"></button></th>
+                  <th><img class="picture_in_basket" src="img/content/hit3.png" alt="" width="33" height="33"></th>
+                  <th><span class="product_basket">Клубничный пломбир с присыпкой из белого шоколада</span></th>
+                  <th><span class="price_kg">1,5 кг х 300 руб.</span></th><th><span class="total">450 руб.</span></th>
+                </tr>
+              </table>
+              <p class="total_price">Итого: 750 руб.</p>
+              <button class="button button_place_your_order" type="submit">Оформить заказ</button>
+          </form>
+          </div>
+        </div>
+    </div>
+    
+    </div>
 	  
 	  </div>
 	   </nav>

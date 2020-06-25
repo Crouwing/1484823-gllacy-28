@@ -33,30 +33,28 @@
   </ul>
   
   <div class="user_navigation">
-  <div class="search">
+   <div class="search">
   <a class="search_icon" href="#" aria-label="поиск"></a>
   <div class="search_form">
     <form action="https://echo.htmlacademy.ru" method="get">
-      <button id="search" type="submit" aria-label="Поиск"><!--Поиск --></button>
-      <input type="search" name="search" placeholder="Что ищем?"> 
+      <input class="search_box" type="search" name="search" placeholder="Крем-брюле"> 
       </form>
   </div>
   </div>
   
   
   
-  <div class="login">
-  <a href="#" ><span class="login_url">Вход</span></a>
+ <div class="login">
+  <a class="login_url" href="#" ><span class="login_url">Вход</span></a>
   <div class="login_form">
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <input type="email" name="email" placeholder="Электронная почта" required> </p>
-      <p>
-        <input type="password" name="password" placeholder="Пароль" required> </p>
-      <p>
+        <input type="email" name="email" placeholder="email@example.com" required> 
+        <input type="password" name="password" placeholder="******" required> 
         <button class="button button_login" type="submit">Войти</button>
-      </p>
-      <p class="authentication_problem"><a href="#">Забыли пароль?</a> <a href="#">Новая регистрация</a></p> 
+      <ul class="authentication_problem">
+      <li><a href="#">Забыли пароль?</a> </li>
+      <li><a href="#">Новая регистрация</a> </li> 
+      </ul>
     </form>
   </div>
     </div>

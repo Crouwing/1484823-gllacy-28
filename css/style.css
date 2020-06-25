@@ -14,57 +14,34 @@
 
 
 
-
-.search_form {           /*Спрятанные поля*/
+.ctlg_submenu {
 /*  display: none;*/
-  position: absolute;
-  right: 0px;
-  top: 39px;
-  
-  width: 341px;
-  height: 84px;
-  padding: 20px 15px;
-  background: #F8F7F4;
+  width: 143px;
+  height: 171px;
+  padding: 13px 20px 14px 21px;
+
+  background: #FFFFFF;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
-}    
-
-.row {
-  width: 311px;
-  height: 44px;
-  padding: 15px;
-  background: #FFFFFF;
-  border: 1px solid #D3D3D2;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.row::placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #999999;
-}
-
-.row input::-webkit-input-placeholder {
-  color:  #000000; 
-}
-.row input:-moz-placeholder {
-  color:  #000000; 
-}
-.row input:-ms-input-placeholder {
-  color: #000000; 
 }
 
 
-.ctlg_submenu {
-  display: none;
+.ctlg_submenu li:first-child {
+  margin: 0;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+  width: 128px;
 }
 
-.login_form {
-  display: none;
+.ctlg_submenu li {
+  width: 228px;
+  height: 22px;
+  margin-top: 9px;
 }
+
+.ctlg_submenu li:hover {
+  background: #FBDED7;
+}
+
 
 .visually-hidden {
   display: none;
@@ -177,7 +154,7 @@ a {
 
 }
 
-.ctlg a:hover {
+.ctlg:hover {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -226,6 +203,38 @@ a {
   background-image: url(../img/decor/loupe.svg);
 }
 
+.search_form {         
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 39px;
+  
+  width: 341px;
+  height: 84px;
+  padding: 20px 15px;
+  background: #F8F7F4;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}    
+
+.search_box {
+  width: 311px;
+  height: 44px;
+  padding: 15px;
+  background: #FFFFFF;
+  border: 1px solid #D3D3D2;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.search input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
+
 /* Логин */
 
 .login {
@@ -246,7 +255,71 @@ a {
   color: var(--basic-white-text);
 }
 
-.login a::before {
+.login_form {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  width: 277px;
+  height: 214px;
+  padding: 20px 17px 22px 19px;
+  background: #F8F7F4;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.login_form input {
+  width: 241px;
+  height: 44px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border: 1px solid #D3D3D2;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.login_form input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.authentication_problem {
+  padding: 0;
+  margin-top: -40px;
+  width: 119px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.authentication_problem a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--basic-dark-text);
+  text-decoration: underline;
+  text-decoration-color: #808080;
+}
+
+
+.button_login {
+  padding: 15px 25px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 16px;
+  border: none;
+  color: var(--basic-white-text);
+}
+
+
+.login_url::before {
   content: "";
   position: absolute;
   left: 16px;
@@ -257,24 +330,12 @@ a {
   background-repeat: no-repeat;
 }
 
-.login a:hover {
+.login_url:hover {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-dark-text);
-}
-
-.authentication_problem a {
-  color: var(--basic-dark-text);
-  text-decoration: underline;
-}
-
-.button_login {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 16px;
 }
 
 /* Корзина пустая */
@@ -318,6 +379,39 @@ a {
   border-radius: 20px;
 }
 
+.basket_red_form {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  width: 539px;
+  padding: 0px 14px 21px 21px;
+  background: #F8F7F4;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+
+.list_of_goods {
+  border-spacing: 0px 19px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #CACAC7;
+}
+
+.list_of_goods tr{
+  margin-bottom: 20px;
+}
+
+
+.list_of_goods button {
+  border: none;
+  padding: 0;
+  margin-right: 9px;
+  background: transparent;
+}
+
  .basket_red a {
   font-style: normal;
   font-weight: 500;
@@ -338,6 +432,10 @@ a {
 }
 
  .product_basket {
+  width: 216px;
+  display: inline-block;
+  text-align: start;
+  margin-right: 31px;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -345,7 +443,12 @@ a {
   color: var(--basic-dark-text)
  }
 
+ .product_2 {
+  vertical-align: top;
+ }
+
  .price_kg {
+  margin-right: 26px;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -353,7 +456,18 @@ a {
   color: var(--black-color);
  }
 
- .total {
+.total {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--basic-dark-text);
+}
+
+ .total_price {
+  margin: 0;
+  margin-left: 395px;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -361,11 +475,19 @@ a {
   color: var(--basic-dark-text);
  }
 
+ .picture_in_basket {
+  margin-right: 13px;
+ }
+
  .button_place_your_order {
+  margin-left: 332px;
+  padding: 13px 15px 13px 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 16px;
+  border: none;
+  color: var(--basic-white-text);
  }
 
 /* Время работы и тел */
@@ -660,6 +782,13 @@ a {
   height: 61px;
   background-image: url(../img/decor/hit.svg);
   background-repeat: no-repeat;
+}
+
+.hits li:hover {
+  background-color: #FFFFFF;
+  opacity: 0.2;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 
@@ -1474,9 +1603,9 @@ fieldset.filling {
 
 /* Для ФАЙЛА МОДАЛКИ ВРЕМЕННО!!!*/
 
- main {
+/* main {
   height: 1000px;
  }
 
-
+*/
 
