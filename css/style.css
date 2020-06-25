@@ -77,7 +77,6 @@ a {
 .container {
   position: relative;
   width: 1146px;
-  border: 2px solid #0000ff;
   margin: 0 auto;
 }
 
@@ -100,7 +99,7 @@ a {
   font-weight: bold;
   color: var(--basic-white-text);
   list-style-type: none;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-left: 24px;
 }
 
@@ -117,7 +116,6 @@ a {
 .user_navigation {
   display: flex;
   justify-content: flex-end;
-  border: 2px solid #ff0fff;
   margin-top: 14px;
   margin-left: auto;
 
@@ -495,7 +493,6 @@ a {
   font-size: 14px;
   line-height: 24px;
   margin-top: 2px;
-  border: 2px solid #fff445;
   margin-left: auto;
 }
 
@@ -518,12 +515,12 @@ a {
   background-color: #849d8f;
   background-image: url(../img/content/slide1.png);
   background-repeat: no-repeat;
-  background-position: top 80px center;
+  background-position: top 83px center;
 }
 
 .slider {
   position: relative;
-  padding-top: 260px;
+  padding-top: 268px;
   text-align: center;
 }
 
@@ -570,7 +567,7 @@ a {
 
 .slider_button {
   display: inline-block;
-  padding: 12px 44px;
+  padding: 9px 41px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -626,7 +623,7 @@ a {
 .hit {
   display: grid;
   grid-template-columns: 560px 560px;
-  column-gap: 22px;
+  column-gap: 26px;
   margin-top: 40px;
 }
 
@@ -672,12 +669,9 @@ a {
 }
 
 .button_raspberry {
-  margin-top: 35px;
+  margin-top: 42px;
   margin-left: 358px;
-  padding-top: 15px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-bottom: 16px;
+  padding: 12px 22px;
 }
 
 
@@ -723,11 +717,8 @@ a {
 
 .button_chocolate {
   margin-left: 332px;
-  margin-top: 34px;
-  padding-top: 16px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-bottom: 15px;
+  margin-top: 42px;
+  padding: 12px 22px;
 
 }
 
@@ -756,7 +747,7 @@ a {
   list-style-type: none;
   display: grid;
   grid-template-columns: 267px 267px 267px 267px;
-  column-gap: 25px;
+  column-gap: 26px;
   margin: 0;
   padding: 0;
 }
@@ -769,7 +760,7 @@ a {
 .hits li::before {
   content: "";
   position: absolute;
-  bottom: 267px;
+  bottom: 264px;
 
   width: 61px;
   height: 61px;
@@ -796,13 +787,11 @@ a {
 }
 
 
-
-
 .hits h3 {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 13px;
+  margin-top: 8px;
   bottom: 48px;
 }
 
@@ -810,7 +799,7 @@ a {
   position: absolute;
   padding: 0;
   margin: 0;
-  bottom: 75px;
+  bottom: 71px;
 }
 
 .hits a {
@@ -829,10 +818,7 @@ a {
   /*border:1px dashed transparent;*/
   margin: 0;
   padding: 0;
-  padding-top: 24px;
-  padding-left: 20px;
-  padding-right: 22px;
-  padding-bottom: 36px;
+  padding: 24px 23px 30px 24px;
   border-radius: 16px;
   color: var(--basic-dark-text);
   background-color: var(--Pattern-color);
@@ -854,6 +840,10 @@ a {
 .advantages ul {
   padding: 0px;
   margin: 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
   margin-left: 51px;
   display: flex;
   flex-wrap: wrap;
@@ -864,16 +854,15 @@ a {
  .ice_cream {
   position: relative;
   max-width: 485px;
-  margin-top: 21px;
+  margin-top: 15px;
   margin-right: 81px;
-  border: 2px solid #ff00ff;
 }
 
 .ice_cream::before {
   content: "";
   position: absolute;
-  right: 485px;
-  bottom: 16px;
+  right: 492px;
+  bottom: 26px;
 
   width: 49px;
   height: 49px;
@@ -884,15 +873,14 @@ a {
 .cow {
   position: relative;
   max-width: 482px;
-  margin-top: 21px;
-  border: 1px solid #ff00ff;
+  margin-top: 15px;
 }
 
 .cow::before {
   content: "";
   position: absolute;
-  right: 485px;
-  bottom: 16px;
+  right: 488px;
+  bottom: 27px;
 
   width: 49px;
   height: 49px;
@@ -903,16 +891,15 @@ a {
 .eco {
   position: relative;
   max-width: 484px;
-  margin-top: 33px;
+  margin-top: 22px;
   margin-right: 81px;
-  border: 1px solid #ff00ff;
 }
 
 .eco::before {
   content: "";
   position: absolute;
-  right: 485px;
-  bottom: 34px;
+  right: 490px;
+  bottom: 48px;
 
   width: 49px;
   height: 49px;
@@ -922,16 +909,16 @@ a {
 
 .thermometer {
   position: relative;
+  width: 482px;
   max-width: 484px;
-  margin-top: 33px;
-  border: 1px solid #ff00ff;
+  margin-top: 22px;
 }
 
 .thermometer::before {
   content: "";
   position: absolute;
-  right: 485px;
-  bottom: 34px;
+  right: 487px;
+  bottom: 48px;
 
   width: 49px;
   height: 49px;
@@ -944,7 +931,7 @@ a {
  .news {
   display: grid;
   grid-template-columns: 560px 560px;
-  column-gap: 22px;
+  column-gap: 26px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -954,7 +941,7 @@ a {
 .sherbets {
   width: 560px;
   border-radius: 16px;
-  padding: 21px;
+  padding: 19px;
   background-color: var(--basic-mail);
   background-image: url(../img/fon/strawberry-background.png);
   background-size: cover;
@@ -972,7 +959,6 @@ a {
 .sherbets h2 {
   max-width: 287px;
   margin: 0;
-  margin-top: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -998,6 +984,7 @@ a {
 }
 
 .mail {
+  position: relative;
   width: 548px;
   padding-top: 23px;
   padding-left: 20px;
@@ -1024,19 +1011,21 @@ a {
   width: 368px;
   height: 44px;
   margin-top: 47px;
+  padding: 14px;
 }
 
+
 .button_email {
+  position: absolute;
+  bottom: 32px;
+  right: 21px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white-text);
   text-align: center;
-  padding-left: 19px;
-  padding-right: 19px;
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding: 11px 19px 10px 19px;
   margin-left: 6px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   border: 0;
@@ -1048,7 +1037,9 @@ a {
 .map_img {
   height: 430px;
   width: 1200px;
-  position: relative; 
+  position: relative;
+  left: 4px;
+  top: 2px;
 }
 
 .map_img::before {
@@ -1236,7 +1227,7 @@ a {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: -37px;
+  margin-top: -31px;
   list-style-type: none;
   font-style: normal;
   font-weight: normal;
@@ -1328,7 +1319,7 @@ a {
 .range_filter {
   position: relative;
   height: 36px;
-  width: 176px;
+  width: 215px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 16px 21px;
@@ -1357,11 +1348,11 @@ a {
 }
 
 .range_filter .toggle_min {
-  left: 25px;
+  left: 32px;
 }
 
 .range_filter .toggle_max {
-  left: 128px;
+  left: 130px;
 }
 
 
@@ -1371,7 +1362,7 @@ a {
   padding: 0;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 7px 17px 7px 14px;
+  padding: 5px 20px 4px 17px;
 }
 
 .fat {
@@ -1408,6 +1399,10 @@ a {
   margin-right: 19px;
 }
 
+.fatness li:last-child {
+  margin-right: 0;
+}
+
 
 .fillers {
   margin: 0;
@@ -1415,7 +1410,7 @@ a {
   padding: 0;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 8px 19px 8px 16px;
+  padding: 8px 26px 4px 15px;
 }
 
 fieldset.filling {
@@ -1424,6 +1419,10 @@ fieldset.filling {
 
 .fillers li {
   margin-right: 22px;
+}
+
+.fillers li:last-child {
+  margin-right: 0;
 }
 
 .filler {
@@ -1442,11 +1441,9 @@ fieldset.filling {
 .filler+label::before {
   content: '';
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   background-image: url(../img/decor/checkbox-off.svg);
-/*  border: 3px solid rgba(255, 255, 255, 0.8);
-  border-radius: 25%;*/
   margin-right: 11px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1454,6 +1451,8 @@ fieldset.filling {
 }
 
 .filler:checked+label::before {
+  width: 24px;
+  height: 20px;
   background-image: url(../img/decor/checkbox-on.svg);
 }
 
@@ -1468,20 +1467,18 @@ fieldset.filling {
   border: 2px solid #FFFFFF;
   border-radius: 20px;
   margin-left: 14px;
-  margin-top: 24px;
-  padding-top: 10px;
-  padding-left: 27px;
-  padding-bottom: 7px;
-  padding-right: 27px;
+  margin-top: 23px;
+  padding: 8px 29px 6px 27px;
 }
+
 
  /*КАТАЛОГ*/
 
  .products {
   display: grid;
   grid-template-columns: 267px 267px 267px 267px;
-  column-gap: 25px;
-  row-gap: 40px;
+  column-gap: 26px;
+  row-gap: 37px;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -1490,7 +1487,7 @@ fieldset.filling {
 
 .ice_cream_catalog {
   margin-top: 40px;
-  margin-bottom: 83px;
+  margin-bottom: 78px;
 }
 
 .ice_cream_catalog a {
@@ -1519,12 +1516,12 @@ fieldset.filling {
   position: absolute;
   padding: 0;
   margin: 0;
-  bottom: 85px;
+  bottom: 70px;
 }
 
 .info {
   margin: 0;
-  margin-top: 17px;
+  margin-top: 8px;
 }
 
   /*Список страниц в каталоге*/
@@ -1533,8 +1530,8 @@ fieldset.filling {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  margin-right: 27px;
-  margin-bottom: 37px;
+  margin-right: -13px;
+  margin-bottom: 32px;
 }
 
 .catalog_page li {
@@ -1570,7 +1567,6 @@ fieldset.filling {
   /*Футер*/
 
 .footer {
-  border: 2px solid #FF00FF;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   width: 1144px;
   margin: 0 auto;
@@ -1623,7 +1619,6 @@ fieldset.filling {
 
  .about_us {
   width: 327px;
-  border: 1px solid #ff00ff;
  }
 
  .about_us ul {
