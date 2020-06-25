@@ -14,42 +14,10 @@
 
 
 
-.ctlg_submenu {
-/*  display: none;*/
-  width: 143px;
-  height: 171px;
-  padding: 13px 20px 14px 21px;
-
-  background: #FFFFFF;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
-}
-
-
-.ctlg_submenu li:first-child {
-  margin: 0;
-  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
-  width: 128px;
-}
-
-.ctlg_submenu li {
-  width: 228px;
-  height: 22px;
-  margin-top: 9px;
-}
-
-.ctlg_submenu li:hover {
-  background: #FBDED7;
-}
-
-
 .visually-hidden {
   display: none;
 }
 
-.communication {
-  display: none;
-}
 
 *, *::before, *::after {
 box-sizing: border-box;
@@ -107,6 +75,7 @@ a {
 /* Меню */
 
 .container {
+  position: relative;
   width: 1146px;
   border: 2px solid #0000ff;
   margin: 0 auto;
@@ -162,9 +131,19 @@ a {
   color: var(--basic-dark-text);
 }
 
+
 .ctlg_submenu {
+  display: none;
   list-style-type: none;
+  width: 143px;
+  height: 171px;
+  padding: 13px 20px 14px 21px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
 }
+
 
 .ctlg_submenu a {
   font-style: normal;
@@ -173,6 +152,22 @@ a {
   line-height: 16px;
   color: var(--basic-dark-text);
   text-decoration: none;
+}
+
+.ctlg_submenu li:first-child {
+  margin: 0;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+  width: 128px;
+}
+
+.ctlg_submenu li {
+  width: 228px;
+  height: 22px;
+  margin-top: 9px;
+}
+
+.ctlg_submenu li:hover {
+  background: #FBDED7;
 }
 
 .ctlg_submenu .novelties_ctlg {
@@ -210,7 +205,6 @@ a {
   top: 39px;
   
   width: 341px;
-  height: 84px;
   padding: 20px 15px;
   background: #F8F7F4;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
@@ -261,7 +255,6 @@ a {
   right: 0px;
   top: 40px;
   width: 277px;
-  height: 214px;
   padding: 20px 17px 22px 19px;
   background: #F8F7F4;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
@@ -785,11 +778,24 @@ a {
 }
 
 .hits li:hover {
-  background-color: #FFFFFF;
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
+.button_hover_product {
+  display: none;
+  margin-top: 45px;
+  margin-left: 44px;
+  padding: 12px 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white-text);
+}
+
+
 
 
 .hits h3 {
@@ -1129,28 +1135,108 @@ a {
 
  /* Форма обратной связи */
 
+ .communication {
+  display: none;
+  position: absolute;
+  top: 341px;
+  right: 331px;
+  padding: 15px 16px 24px 24px;
+  width: 477px;
+  background: #F8F7F4;
+  border-radius: 6px;
+}
+
+ .feedback {
+  padding: 0;
+}
+
+.feedback li {
+  margin-bottom: 20px;
+}
+
+.feedback input {
+  width: 267px;
+  height: 44px;
+  padding: 16px 14px;
+  background: #FFFFFF;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.communication input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.feedback textarea {
+  width: 428px;
+  height: 154px;
+  padding: 16px 14px;
+  background: #FFFFFF;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.communication textarea::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+}
+
  .communication h2 {
+  margin: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   color: var(--basic-dark-text);
  }
 
+.cross_big img {
+  margin-left: 440px;
+  position: absolute;
+  right: 16px;
+  top: 15px;
+}
+
+
  .button_communication {
+  margin-left: 288px;
+  padding: 14px 24px;
+  border: none;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  color: var(--basic-white-text);
  }
 
    /*Catalog.html*/
+
+.header_filter {
+  margin-bottom: 29px;
+}
+
+.header_filter h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  margin: 0;
+}
 
 .breadcrumb{
   display: flex;
   padding: 0;
   margin: 0;
+  margin-top: -37px;
   list-style-type: none;
   font-style: normal;
   font-weight: normal;
@@ -1194,6 +1280,7 @@ a {
 
 .filter legend {
   margin-bottom: 7px;
+  margin-left: 18px;
 }
 
 .filter_form {
@@ -1422,6 +1509,12 @@ fieldset.filling {
   width: 266px;
 }
 
+.products li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
 .products p {
   position: absolute;
   padding: 0;
@@ -1602,8 +1695,8 @@ fieldset.filling {
 
 
 /* Для ФАЙЛА МОДАЛКИ ВРЕМЕННО!!!*/
-
-/* main {
+/*
+ main {
   height: 1000px;
  }
 
