@@ -103,9 +103,16 @@ a {
   margin-left: 24px;
 }
 
-.main_navigation li {
+.main_navigation_ctlg,
+.main_navigation_delivery,
+.main_navigation_about_company {
   margin-right: 32px;
 }
+
+.main_navigation_ctlg {
+  position: relative;
+}
+
 
 .main_navigation a {
   color: var(--basic-white-text);
@@ -118,10 +125,17 @@ a {
   justify-content: flex-end;
   margin-top: 14px;
   margin-left: auto;
-
 }
 
-.ctlg:hover {
+.active_ctlg {
+  padding: 5px 14px 7px 14px;
+  background: #D07058;
+  border-radius: 26px;
+  margin-left: -14px;
+  margin-right: -13px;
+}
+
+.ctlg:hover  {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -129,13 +143,21 @@ a {
   color: var(--basic-dark-text);
 }
 
+.main_navigation_ctlg:hover 
+.ctlg_submenu {
+  display: block;
+}
+
 
 .ctlg_submenu {
   display: none;
+  position: absolute;
+  top: 30px;
+  left: -21px;
+
   list-style-type: none;
-  width: 143px;
-  height: 171px;
-  padding: 13px 20px 14px 21px;
+  padding: 0px;
+  z-index: 1;
 
   background: #FFFFFF;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
@@ -152,21 +174,24 @@ a {
   text-decoration: none;
 }
 
+
 .ctlg_submenu li:first-child {
-  margin: 0;
+  margin-top: 7px;
+  padding-bottom: 8px;
   border-bottom: 1px solid rgba(50, 50, 50, 0.2);
-  width: 128px;
 }
+
+.ctlg_submenu li:last-child {
+  margin-bottom: 9px;
+}
+
 
 .ctlg_submenu li {
-  width: 228px;
-  height: 22px;
-  margin-top: 9px;
+  min-width: 143px;
+  padding: 3px 20px 3px 21px;
+  margin-top: 7px;
 }
 
-.ctlg_submenu li:hover {
-  background: #FBDED7;
-}
 
 .ctlg_submenu .novelties_ctlg {
   font-style: normal;
@@ -175,6 +200,17 @@ a {
   line-height: 18px;
 }
 
+.ctlg_submenu li:hover {
+  background-color: #FBDED7;
+}
+
+.ctlg_submenu li:active {
+  background-color: #F6B5A5;
+}
+
+.active {
+  background-color: #D07058;
+}
 
 
 /* Поиск */
@@ -189,6 +225,11 @@ a {
   margin-right: 10px;
 }
 
+.search:hover .search_form {
+  display: block;
+  z-index: 2;
+}
+
 .search_icon { 
   display: block;
   width: 16px;
@@ -201,7 +242,7 @@ a {
   position: absolute;
   right: 0px;
   top: 36px;
-  
+
   width: 341px;
   padding: 20px 15px;
   background: #F8F7F4;
@@ -237,6 +278,11 @@ a {
   height: 32px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
+}
+
+.login:hover .login_form {
+  display: block;
+  z-index: 2;
 }
 
 .login a {
@@ -768,16 +814,27 @@ a {
   background-repeat: no-repeat;
 }
 
-.hits li:hover {
+.hits li:hover .hit_hover {
+  display: block;
+}
+
+.hit_hover {
+  display: none;
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  height: 402px;
+  width: 110%;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
 .button_hover_product {
-  display: none;
-  margin-top: 45px;
-  margin-left: 44px;
+  position: absolute;
+  bottom: 20px;
+  left: 56px;
+
   padding: 12px 16px;
   font-style: normal;
   font-weight: bold;
@@ -1203,6 +1260,7 @@ a {
   line-height: 24px;
   color: var(--basic-white-text);
  }
+
 
    /*Catalog.html*/
 
@@ -1713,4 +1771,13 @@ fieldset.filling {
 
 
 
+
+
+/* Для ФАЙЛА МОДАЛКИ ВРЕМЕННО!!!*/
+/*
+ main {
+  height: 1000px;
+ }
+
+*/
 
