@@ -1470,15 +1470,17 @@ margin-right: -11px;
 
 .sort {
   position: relative;
-  width: 100%;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white-text);
+
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 8px 34px 6px 16px;
+  border: none;
+  
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
