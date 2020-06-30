@@ -143,6 +143,12 @@ a {
   border-radius: 26px;
 }
 
+.ctlg {
+padding: 5px 16px 7px 13px;
+margin-left: -14px;
+margin-right: -11px;
+}
+
 .ctlg:hover  {
   font-style: normal;
   font-weight: bold;
@@ -151,9 +157,6 @@ a {
   color: var(--basic-dark-text);
 
   /*color: #323232;*/
-  padding: 5px 13px 7px 13px;
-  margin-left: -14px;
-  margin-right: -11px;
 
   background: #FFFFFF;
   border-radius: 26px;
@@ -317,7 +320,7 @@ a {
 }
 
 .login:hover .login_url::before {
-  background-image: url(../img/decor/login_hover.svg);
+  background-image: url(../img/decor/entrance.svg);
 }
 
 .login:hover .login_form {
@@ -412,6 +415,14 @@ a {
   text-decoration-color: #808080;
 }
 
+.authentication_problem a:hover {
+  color: #E84D37;
+}
+
+.authentication_problem a:active {
+  color: #E84D37;
+}
+
 
 .button_login {
   padding: 14px 26px;
@@ -486,12 +497,14 @@ a {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 19px;
   border-bottom: 1px solid #CACAC7;
 }
 
 .list_of_goods li{
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -525,7 +538,7 @@ a {
   width: 216px;
   display: inline-block;
   text-align: start;
-  margin-right: 29px;
+  margin-right: 31px;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -535,7 +548,7 @@ a {
 
 
  .price_kg {
-  margin-right: 20px;
+  margin-right: 26px;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -563,7 +576,7 @@ a {
  }
 
  .picture_in_basket {
-  margin-right: 4px;
+  margin-right: 13px;
  }
 
  .button_place_your_order {
@@ -588,7 +601,7 @@ a {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-  margin-top: 2px;
+  margin-top: -3px;
   margin-left: auto;
 }
 
@@ -616,7 +629,7 @@ a {
 
 .slider {
   position: relative;
-  padding-top: 268px;
+  padding-top: 273px;
   text-align: center;
 }
 
@@ -683,7 +696,7 @@ a {
 
 .slider_controls {
   position: absolute;
-  bottom: 20px;
+  bottom: 23px;
   left: 0;
   display: grid;
   grid-template-columns: 21px 21px 21px;
@@ -859,6 +872,7 @@ a {
 .hits li {
   position: relative;
   width: 267px;
+  z-index: 1;
 }
 
 .hits li::before {
@@ -885,6 +899,14 @@ a {
   bottom: 48px;
 }
 
+.info a:hover {
+  color: #FFBC9E;
+}
+
+.info a:active {
+  color: #FFBC9E;
+}
+
 .hits p {
   position: absolute;
   padding: 0;
@@ -908,7 +930,7 @@ a {
   /*border:1px dashed transparent;*/
   margin: 0;
   padding: 0;
-  padding: 24px 23px 30px 24px;
+  padding: 24px 23px 30px 23px;
   border-radius: 16px;
   color: var(--basic-dark-text);
   background-color: var(--Pattern-color);
@@ -1059,6 +1081,15 @@ a {
   color: var(--basic-dark-text);
   text-decoration: underline;
 }
+
+.sherbets a:hover {
+  color: #E84D37;
+}
+
+.sherbets a:active {
+  color: #E84D37;
+}
+
 
 /* Подписка на рассылку */ /* Не могу понять как сделать отсупы внутреннего блока от почтового фона( */
 
@@ -1343,7 +1374,7 @@ a {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: -31px;
+  margin-top: -25px;
   list-style-type: none;
   font-style: normal;
   font-weight: normal;
@@ -1406,7 +1437,7 @@ a {
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   margin-right: 15px;
 }
 
@@ -1438,6 +1469,8 @@ a {
 
 
 .sort {
+  position: relative;
+  width: 100%;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1445,7 +1478,26 @@ a {
   color: var(--basic-white-text);
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 5px 14px 7px 13px;
+  padding: 8px 34px 6px 16px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.classification select {
+  background-image: url(../img/decor/icon-down-dir-white.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.classification select:hover {
+  background-image: url(../img/decor/icon-down-dir.svg);
+}
+
+
+
+.row {
+  position: relative;
 }
 
 
@@ -1531,10 +1583,30 @@ a {
   background-size:22px 22px;
 }
 
-.fat:checked+label::before {
-  background-image: url(../img/decor/radio-on.svg);
+.fat:hover+label::before {
   opacity: 1;
 }
+
+
+.fat:disabled+label::before {
+  opacity: 0.4;
+}
+
+
+.fat:checked+label::before {
+  background-image: url(../img/decor/radio-on.svg);
+  opacity: 0.8;
+}
+
+.fat:checked:disabled+label::before {
+  opacity: 0.4;
+}
+
+
+.fat:checked:hover+label::before {
+  opacity: 1;
+}
+
 
 .fatness li {
   margin-right: 19px;
@@ -1592,12 +1664,30 @@ fieldset.filling {
   background-size:24px 20px;
 }
 
+.filler:hover+label::before {
+  opacity: 1;
+}
+
+
+.filler:disabled+label::before {
+  opacity: 0.4;
+}
+
+
 .filler:checked+label::before {
   width: 24px;
   height: 20px;
   background-image: url(../img/decor/checkbox-on.svg);
   margin-right: 11px;
+  opacity: 0.8;
+}
+
+.filler:checked:hover+label::before {
   opacity: 1;
+}
+
+.filler:checked:disabled+label::before {
+  opacity: 0.4;
 }
 
 
@@ -1667,10 +1757,10 @@ fieldset.filling {
   left: -13px;
   height: 402px;
   width: 110%;
-  margin-bottom: 40px;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  z-index: -1;
 }
 
 .hit_hover a  {
@@ -1810,24 +1900,28 @@ fieldset.filling {
 
 
 .facebook {
+  display: block;
   width: 32px;
   height: 32px;
   background-image: url(../img/decor/fb.svg);
  }
 
  .vk {
+  display: block;
   width: 32px;
   height: 32px;
   background-image: url(../img/decor/vk.svg);
  }
 
 .instagram {
+  display: block;
   width: 32px;
   height: 32px;
   background-image: url(../img/decor/instagram.svg);
  }
 
  .twitter {
+  display: block;
   width: 32px;
   height: 32px;
   background-image: url(../img/decor/twitter.svg);
@@ -1844,8 +1938,6 @@ fieldset.filling {
 
  .about_us ul {
   list-style-type: none;
-/*  display: flex;
-  flex-wrap: wrap;*/
   display: grid;
   grid-template-columns: 144px 162px;
   row-gap: 5px;
@@ -1865,6 +1957,15 @@ fieldset.filling {
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
  }
+
+  .about_us a:hover {
+  color: #FFBC9E;
+  }
+
+  .about_us a:hover {
+  color: #FFBC9E;
+  }
+
 
 
  .for_suppliers {
@@ -1899,24 +2000,21 @@ fieldset.filling {
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-white-text);
-  }
+}
 
 
   .html_academy a{
   color: var(--basic-white-text);
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.html_academy a:hover {
+  color: #FFBC9E;
   }
 
 
-
-
-
-/* Для ФАЙЛА МОДАЛКИ ВРЕМЕННО!!!*/
-/*
- main {
-  height: 1000px;
- }
-
-*/
+.html_academy a:active {
+  color: #FFBC9E;
+}
 
