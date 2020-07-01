@@ -141,7 +141,7 @@
           </li>
           <li> <img src="img/content/hit4.png" width="267" height="267" alt="">
             <p class="price">415 ₽<span class="kg">/кг</span></p>
-            <h3 class="info"><a href="#">Сливочное крем-брюле с
+            <h3 class="info"><a href="#">Сливочное крем-брюле<br> с
               карамельной подливкой</a>
             </h3> <div class="hit_hover">
               <a class="button button_hover_product" href="#">Быстрый просмотр</a>
@@ -217,18 +217,19 @@
         </div>
       </div>
     <div class="communication">
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="communication_form" action="https://echo.htmlacademy.ru" method="post">
         <h2>Мы обязательно вам ответим!</h2>
-        <a class="cross_big" href="index.html"> <img src="img/decor/cross-big.svg" width="18" height="17" alt="Закрыть форму"> </a>
+        <button class="cross_big"><img src="img/decor/cross-big.svg" width="18" height="17" alt="Закрыть форму"></button>
           <ul class="feedback">
-            <li><input type="text" name="name" placeholder="Имя Фамилия" required></li> 
-            <li><input type="email" name="email" placeholder="email@example.com" required></li> 
+            <li><input class="communication_login" type="text" name="name" placeholder="Имя Фамилия"></li> 
+            <li><input class="communication_email" type="email" name="email" placeholder="email@example.com"></li> 
             <li><textarea name="message" rows="7" cols="35" placeholder="В свободной форме"></textarea></li>
           </ul>
           <button class="button button_communication" type="submit">Отправить</button>
       </form>
     </div>
-    
+
+    <script src="js/script.js"></script>
    
   </main>
   <footer>
