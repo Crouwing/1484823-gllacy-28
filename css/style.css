@@ -1189,7 +1189,7 @@ a {
   top: 2px;
 }
 
-.map_img::before {
+.map_img::before { 
   content: "";
   position: absolute;
   right: 885px;
@@ -1203,6 +1203,11 @@ a {
 }
 
 .map_img img {
+  position: absolute;
+  right: 31px;
+}
+
+.map iframe {
   position: absolute;
   right: 31px;
 }
