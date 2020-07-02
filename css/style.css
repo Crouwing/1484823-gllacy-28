@@ -259,7 +259,7 @@ a {
 }
 
 .search:hover .search_icon {
-  background-image: url(../img/decor/search_hover.svg);
+  background-image: url(../img/search_hover.svg);
 }
 
 .search:hover .search_form {
@@ -271,7 +271,7 @@ a {
   display: block;
   width: 16px;
   height: 16px;  
-  background-image: url(../img/decor/loupe.svg);
+  background-image: url(../img/loupe.svg);
 }
 
 .search_form {         
@@ -330,7 +330,7 @@ a {
 }
 
 .login:hover .login_url::before {
-  background-image: url(../img/decor/entrance.svg);
+  background-image: url(../img/entrance.svg);
 }
 
 .login:hover .login_form {
@@ -353,7 +353,7 @@ a {
 
   width: 20px;
   height: 19px;
-  background-image: url(../img/decor/login_white.svg);
+  background-image: url(../img/login_white.svg);
   background-repeat: no-repeat;
 }
 
@@ -471,7 +471,7 @@ a {
 
   width: 21px;
   height: 20px;
-  background-image: url(../img/decor/basket.svg);
+  background-image: url(../img/basket.svg);
   background-repeat: no-repeat;
 }
 
@@ -540,7 +540,7 @@ a {
 
   width: 21px;
   height: 20px;
-  background-image: url(../img/decor/basket-red.svg);
+  background-image: url(../img/basket-red.svg);
   background-repeat: no-repeat;
 }
 
@@ -632,7 +632,7 @@ a {
 
 .site_wrapper {
   background-color: #849d8f;
-  background-image: url(../img/content/slide1.png);
+  background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
   background-position: top 83px center;
 }
@@ -671,17 +671,17 @@ a {
 
 .site_wrapper_1 {
   background-color: var(--fon-color);
-  background-image: url(../img/content/slide1.png);
+  background-image: url(../img/slide1.png);
 }
 
 .site_wrapper_2 {
   background-color: var(--fon-color-two);
-  background-image: url(../img/content/slide2.png);
+  background-image: url(../img/slide2.png);
 }
 
 .site_wrapper_3 {
   background-color: var(--fon-color-three);
-  background-image: url(../img/content/slide3.png);
+  background-image: url(../img/slide3.png);
 }
 
 .slider_button {
@@ -769,7 +769,7 @@ a {
   padding-bottom: 22px;
   border-radius: 16px;
   background-color: var(--Raspberry-color);
-  background-image: url(../img/fon/crimson-background.png);
+  background-image: url(../img/crimson-background.png);
 }
 
 .raspberry h2 {
@@ -816,7 +816,7 @@ a {
   padding-bottom: 22px;
   border-radius: 16px;
   background-color: var(--Chocolate-color);
-  background-image: url(../img/fon/chocolate-background.png);
+  background-image: url(../img/chocolate-background.png);
 }
 
 .chocolate h2 {
@@ -892,7 +892,7 @@ a {
 
   width: 61px;
   height: 61px;
-  background-image: url(../img/decor/hit.svg);
+  background-image: url(../img/hit.svg);
   background-repeat: no-repeat;
 }
 
@@ -944,7 +944,7 @@ a {
   border-radius: 16px;
   color: var(--basic-dark-text);
   background-color: var(--Pattern-color);
-  background-image: url(../img/fon/pattern.jpg);
+  background-image: url(../img/pattern.jpg);
   background-repeat: repeat, repeat;
 }
 
@@ -988,7 +988,7 @@ a {
 
   width: 49px;
   height: 49px;
-  background-image: url(../img/decor/ice-cream.svg);
+  background-image: url(../img/ice-cream.svg);
   background-repeat: no-repeat;
 }
 
@@ -1006,7 +1006,7 @@ a {
 
   width: 49px;
   height: 49px;
-  background-image: url(../img/decor/cow.svg);
+  background-image: url(../img/cow.svg);
   background-repeat: no-repeat;
 }
 
@@ -1025,7 +1025,7 @@ a {
 
   width: 49px;
   height: 49px;
-  background-image: url(../img/decor/eco.svg);
+  background-image: url(../img/eco.svg);
   background-repeat: no-repeat;
 }
 
@@ -1044,7 +1044,7 @@ a {
 
   width: 49px;
   height: 49px;
-  background-image: url(../img/decor/thermometer.svg);
+  background-image: url(../img/thermometer.svg);
   background-repeat: no-repeat;
 }
 
@@ -1065,7 +1065,7 @@ a {
   border-radius: 16px;
   padding: 19px;
   background-color: var(--basic-mail);
-  background-image: url(../img/fon/strawberry-background.png);
+  background-image: url(../img/strawberry-background.png);
   background-size: cover;
 }
 
@@ -1110,7 +1110,7 @@ a {
   width: 560px;
   border-radius: 16px;
   background-color: var(--basic-mail);
-  background-image: url(../img/fon/mail-background.png);
+  background-image: url(../img/mail-background.png);
   background-size: cover;
 }
 
@@ -1181,7 +1181,7 @@ a {
 
 /* Данные для связи на карте */
 
-.map_img {
+.map_iframe {
   height: 430px;
   width: 1200px;
   position: relative;
@@ -1189,27 +1189,10 @@ a {
   top: 2px;
 }
 
-.map_img::before { 
-  content: "";
-  position: absolute;
-  right: 885px;
-  bottom: 154px;
-
-  width: 80px;
-  height: 140px;
-  background-image: url(../img/decor/pin.svg);
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.map_img img {
-  position: absolute;
-  right: 31px;
-}
-
 .map iframe {
   position: absolute;
   right: 31px;
+  border: none;
 }
 
 .map {
@@ -1274,9 +1257,9 @@ a {
 
  .communication {
   display: none;
-  position: absolute;
-  top: 329px;
-  right: 334px;
+  position: fixed;
+  top: 338px;
+  right: 386px;
   padding: 15px 16px 24px 24px;
   width: 477px;
   background: #F8F7F4;
@@ -1462,6 +1445,10 @@ a {
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
+.breadcrumb a:hover {
+  color:  #FFBC9E;
+}
+
 .breadcrumb_ctlg::before {
   content: "";
   position: absolute;
@@ -1470,7 +1457,7 @@ a {
 
   width: 6px;
   height: 6px;
-  background-image: url(../img/decor/breadcrumb.svg);
+  background-image: url(../img/breadcrumb.svg);
   background-repeat: no-repeat;
 }
 
@@ -1482,7 +1469,7 @@ a {
 
   width: 6px;
   height: 6px;
-  background-image: url(../img/decor/breadcrumb.svg);
+  background-image: url(../img/breadcrumb.svg);
   background-repeat: no-repeat;
 }
 
@@ -1555,13 +1542,13 @@ a {
 }
 
 .classification select {
-  background-image: url(../img/decor/icon-down-dir-white.svg);
+  background-image: url(../img/icon-down-dir-white.svg);
   background-repeat: no-repeat;
   background-position: right 14px center;
 }
 
 .classification select:hover {
-  background-image: url(../img/decor/icon-down-dir.svg);
+  background-image: url(../img/icon-down-dir.svg);
 }
 
 
@@ -1607,7 +1594,7 @@ a {
 
   width: 20px;
   height: 20px;
-  background-image: url(../img/decor/filter-button.svg);
+  background-image: url(../img/filter-button.svg);
 }
 
 .range_filter .toggle:hover {
@@ -1649,7 +1636,7 @@ a {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background-image: url(../img/decor/radio-off.svg);
+  background-image: url(../img/radio-off.svg);
   opacity: 0.8;
   margin-right: 11px;
   background-repeat: no-repeat;
@@ -1668,7 +1655,7 @@ a {
 
 
 .fat:checked + label::before {
-  background-image: url(../img/decor/radio-on.svg);
+  background-image: url(../img/radio-on.svg);
   opacity: 0.8;
 }
 
@@ -1730,7 +1717,7 @@ fieldset.filling {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url(../img/decor/checkbox-off.svg);
+  background-image: url(../img/checkbox-off.svg);
   opacity: 0.8;
   margin-right: 15px;
   background-repeat: no-repeat;
@@ -1751,7 +1738,7 @@ fieldset.filling {
 .filler:checked+label::before {
   width: 24px;
   height: 20px;
-  background-image: url(../img/decor/checkbox-on.svg);
+  background-image: url(../img/checkbox-on.svg);
   margin-right: 11px;
   opacity: 0.8;
 }
@@ -1935,7 +1922,7 @@ fieldset.filling {
   height: 12px;
   margin-top: 3px;
 
-  background-image: url(../img/decor/icon-left-small.svg);
+  background-image: url(../img/icon-left-small.svg);
 }
 
 .next_page {
@@ -1944,7 +1931,7 @@ fieldset.filling {
   height: 12px;
   margin-top: 3px;
 
-  background-image: url(../img/decor/icon-right-small.svg);
+  background-image: url(../img/icon-right-small.svg);
 }
 
   /*Футер*/
@@ -1979,28 +1966,28 @@ fieldset.filling {
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url(../img/decor/fb.svg);
+  background-image: url(../img/fb.svg);
  }
 
  .vk {
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url(../img/decor/vk.svg);
+  background-image: url(../img/vk.svg);
  }
 
 .instagram {
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url(../img/decor/instagram.svg);
+  background-image: url(../img/instagram.svg);
  }
 
  .twitter {
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url(../img/decor/twitter.svg);
+  background-image: url(../img/twitter.svg);
  }
 
  /* "О нас" (подвал) */
@@ -2060,7 +2047,7 @@ fieldset.filling {
 
   width: 15px;
   height: 13px;
-  background-image: url(../img/decor/heart.svg);
+  background-image: url(../img/heart.svg);
   background-repeat: no-repeat;
 }
 
