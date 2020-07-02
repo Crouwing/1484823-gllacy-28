@@ -434,7 +434,7 @@ a {
 
   padding: 20px 17px 10px 19px;
   background: var(--modal-form-background);
-  box-shadow: 0px 20px 20pxvar(--shadow-two);
+  box-shadow: 0px 20px 20px var(--shadow-two);
   border-radius: 4px;
 }
 
@@ -559,7 +559,7 @@ a {
   width: 539px;
   padding: 20px 14px 21px 21px;
   background: var(--modal-form-background);
-  box-shadow: 0px 20px 20pxvar(--shadow-two);
+  box-shadow: 0px 20px 20px var(--shadow-two);
   border-radius: 4px;
 }
 
@@ -1320,7 +1320,7 @@ a {
   display: none;
   position: fixed;
   top: 338px;
-  right: 386px;
+  right: 712px;
   padding: 15px 16px 24px 24px;
   width: 477px;
   background: var(--modal-form-background);
