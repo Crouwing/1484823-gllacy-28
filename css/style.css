@@ -10,7 +10,10 @@
   --strawberry-background-color: #ffffff;
   --basic-mail: #F8F7F4;
   --feedback-map-background:  #FEFEFE;
+  --slider-controls-background: rgba(255, 255, 255, 0.4);
+  --scale-background: rgba(248, 247, 244, 0.5);
   --modal-form-background: #F8F7F4;
+
 
  /* Цвета текста*/
   --basic-white: #ffffff;
@@ -19,33 +22,54 @@
   --black-color: #000000;
   --basic-placeholder: #999999;
 
-/*  Кнопки*/
-  --buton-gradient-one: #F26843;
-  --buton-gradient-two: #E74A35;
-  --button-hover-gradient-one: rgba(255, 255, 255, 0.2);
 
-  --button-shadow-one: rgba(172, 16, 0, 0.64); 
-  --button-shadow-two: rgba(160, 32, 11, 0.76); 
+/*  Кнопки*/
+  --button-gradient-one: #F26843;
+  --button-gradient-two: #E74A35;
+
 
 /*  Тени*/
-  --active-ctlg-shadow: #696969;
+  --shadow-one: #696969;
+  --shadow-two: rgba(0, 0, 0, 0.4);
+  --shadow-three: rgba(160, 32, 11, 0.76);
+  --shadow-four: rgba(0, 0, 0, 0.2);
+  --shadow-five: rgba(172, 16, 0, 1);
+  --shadow-six: #AC1000;
+  --shadow-seven: rgba(172, 16, 0, 0.64);
+  --shadow-eight: #942718;
+
 
 /*  hover*/
+  --button-hover-gradient-one: rgba(255, 255, 255, 0.2);
+  --button-slider-buy-hover-one: #f58669;
+  --button-slider-buy-hover-two: #ec6f5e;
   --ctlg-submenu-hover: #FBDED7;
   --authentication-problem-hover: #E84D37;
   --info-a-hover: #FFBC9E;
   --sherbets-a-hover: #E84D37;
 
+
 /*  active*/
+  --button-active-gradient-one: rgba(0, 0, 0, 0.07);
   --ctlg-submenu-active: #F6B5A5;
   --ctlg-active: #EDEDED;
+  --button-slider-buy-active-one: #d84732;
+  --button-slider-buy-active-two: #e1613e;
+
+
+/*  border*/
+  --modal-box-border: #D3D3D2;
+  --list-of-goods-border: #CACAC7;
+  --ctlg-submenu-border: rgba(50, 50, 50, 0.2);
+  --feedback-input-border: rgba(178, 178, 178, 0.52);
+
 
 /*  Прочее*/
   --ctlg-background-active: #D07058;
   --login-text-decor: #909090;
   --active-ctlg: #D07058;
-  --modal-box-border: #D3D3D2;
-  --list-of-goods-border: #CACAC7;
+  
+  
 }
 
 
@@ -82,7 +106,6 @@ a {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-/*  align-content: start;*/
 }
 
 
@@ -91,24 +114,25 @@ a {
  .button {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, var(--buton-gradient-one) 0%, var(--buton-gradient-two) 100%);
-  box-shadow: 0px 2px 2px var(--button-shadow-one);
-  border-radius: 70px;
-}
-
-
-.button:hover {
-  background: linear-gradient(0deg, var(--button-hover-gradient-one), var(--button-hover-gradient-one)),
-  linear-gradient(180deg, var(--buton-gradient-one) 0%, var(--buton-gradient-two) 100%);
-  box-shadow: 0px 2px 2px #AC1000;
+  background: linear-gradient(180deg, var(--button-gradient-one) 0% , var(--button-gradient-two) 100%);
+  box-shadow: 0px 2px 2px var(--shadow-seven);
   border-radius: 50px;
 }
 
+.button:hover {
+  background: linear-gradient(0deg, var(--button-hover-gradient-one), var(--button-hover-gradient-one)), 
+            linear-gradient(180deg, var(--button-gradient-one) 0%, var(--button-gradient-two) 100%);
+  box-shadow: 0px 2px 2px var(--shadow-six);
+  border-radius: 50px;
+}
 
 .button:active {
-  background: linear-gradient(to bottom, #d84732, #e1613e);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+  background: linear-gradient(0deg, var(--button-active-gradient-one), var(--button-active-gradient-one)), 
+              linear-gradient(180deg, var(--button-gradient-one) 0%, var(--button-gradient-two) 100%);
+  box-shadow: inset 0px 2px 2px var(--shadow-eight);
+  border-radius: 50px;
 }
+
 
 /* Меню */
 
@@ -177,7 +201,7 @@ a {
   color: var(--basic-dark);
 
   background: var(--ctlg-active);
-  box-shadow: inset 0px 2px 1px var(--active-ctlg-shadow);
+  box-shadow: inset 0px 2px 1px var(--shadow-one);
   border-radius: 26px;
 }
 
@@ -216,7 +240,7 @@ a {
   z-index: 1;
 
   background: var(--basic-white);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20px var(--shadow-two);
   border-radius: 4px;
 }
 
@@ -248,7 +272,7 @@ a {
 
   width: 128px;
   height: 0;
-  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+  border-bottom: 1px solid var(----ctlg-submenu-border);
 }
 
 
@@ -286,7 +310,7 @@ a {
   padding: 8px;
   width: 32px;
   height: 32px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--button-hover-gradient-one);
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -320,7 +344,7 @@ a {
   width: 341px;
   padding: 20px 15px;
   background: var(--modal-form-background);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20px var(--shadow-two);
   border-radius: 4px;
 }    
 
@@ -358,7 +382,7 @@ a {
   margin-right: 10px;
   width: 92px;
   height: 32px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--button-hover-gradient-one);
   border-radius: 20px;
 }
 
@@ -410,7 +434,7 @@ a {
 
   padding: 20px 17px 10px 19px;
   background: var(--modal-form-background);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20pxvar(--shadow-two);
   border-radius: 4px;
 }
 
@@ -489,7 +513,7 @@ a {
   padding: 5px 16px 8px 45px;
   width: 100px;
   height: 32px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--button-hover-gradient-one);
   border-radius: 20px;
 }
 
@@ -535,7 +559,7 @@ a {
   width: 539px;
   padding: 20px 14px 21px 21px;
   background: var(--modal-form-background);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20pxvar(--shadow-two);
   border-radius: 4px;
 }
 
@@ -732,13 +756,13 @@ a {
 }
 
 .slider_buy:hover {
-  background: linear-gradient(to bottom, #f58669, #ec6f5e);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+  background: linear-gradient(to bottom, var(--button-slider-buy-hover-one), var(--button-slider-buy-hover-two));
+  box-shadow: 0 2px 2px var(--shadow-five);
 }
 
 .slider_buy:active {
-  background: linear-gradient(to bottom, #d84732, #e1613e);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+  background: linear-gradient(to bottom, var(--button-slider-buy-active-one), var(--button-slider-buy-active-two));
+  box-shadow: inset 0 2px 2px var(--shadow-five);
 }
 
 .slider_controls {
@@ -753,7 +777,7 @@ a {
 }
 
 .slider_controls button:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: var(--slider-controls-background);
 }
 
 .slider_controls button:active {
@@ -964,7 +988,7 @@ a {
 .hits a {
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration-color: var(--button-hover-gradient-one);
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -1211,7 +1235,7 @@ a {
   text-align: center;
   padding: 11px 19px 10px 19px;
   margin-left: 6px;
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  text-shadow: 0px 2px 5px var(--shadow-three);
   border: 0;
 }
 
@@ -1328,7 +1352,7 @@ a {
   height: 44px;
   padding: 16px 14px;
   background: var(--basic-white);
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 1px solid var(--feedback-input-border);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1360,7 +1384,7 @@ a {
   height: 154px;
   padding: 16px 14px;
   background: var(--basic-white);
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 1px solid var(--feedback-input-border);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1479,7 +1503,7 @@ a {
   line-height: 16px;
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration-color: var(--button-hover-gradient-one);
 }
 
 .breadcrumb a:hover {
@@ -1568,7 +1592,7 @@ a {
   line-height: 18px;
   color: var(--basic-white);
 
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--button-hover-gradient-one);
   border-radius: 20px;
   padding: 8px 34px 6px 16px;
   border: none;
@@ -1607,14 +1631,14 @@ a {
   position: relative;
   height: 36px;
   width: 215px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--button-hover-gradient-one);
   border-radius: 20px;
   padding: 16px 21px;
 }
 
 .range_filter .scale {
   height: 2px;
-  background-color: rgba(248, 247, 244, 0.5);
+  background-color: var(--scale-background);
 }
 
 .range_filter .bar {
@@ -1651,7 +1675,7 @@ a {
   margin: 0;
   display: flex;
   padding: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--button-hover-gradient-one);
   border-radius: 20px;
   padding: 5px 20px 4px 17px;
 }
@@ -1719,7 +1743,7 @@ a {
   margin: 0;
   display: flex;
   padding: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--button-hover-gradient-one);
   border-radius: 20px;
   padding: 8px 19px 4px 15px;
 }
@@ -1795,7 +1819,7 @@ fieldset.filling {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--button-hover-gradient-one);
   border: 2px solid var(--basic-white);
   border-radius: 20px;
   margin-left: 14px;
@@ -1810,7 +1834,7 @@ fieldset.filling {
 
 .button_filter:active {
   background: var(--ctlg-active);
-  box-shadow: inset 0px 2px 1px var(--active-ctlg-shadow);
+  box-shadow: inset 0px 2px 1px var(--shadow-one);
   border-radius: 26px;
   color: var(--basic-dark);
   border: none;
@@ -1840,7 +1864,7 @@ fieldset.filling {
 .ice_cream_catalog a {
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration-color: var(--button-hover-gradient-one);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1855,8 +1879,8 @@ fieldset.filling {
   left: -13px;
   height: 402px;
   width: 110%;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--button-hover-gradient-one);
+  box-shadow: 0px 20px 20px var(--shadow-four);
   border-radius: 4px;
   z-index: -1;
 }
@@ -1922,7 +1946,7 @@ fieldset.filling {
 
 .page_number:hover {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--button-hover-gradient-one);
 }
 
 .page_number:active {
@@ -1975,7 +1999,7 @@ fieldset.filling {
 
 .footer {
   position: relative;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid var(--button-hover-gradient-one);
   width: 1144px;
   margin: 0 auto;
   display: flex;
@@ -2055,7 +2079,7 @@ fieldset.filling {
   line-height: 18px;
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration-color: var(--button-hover-gradient-one);
  }
 
   .about_us a:hover {
@@ -2106,7 +2130,7 @@ fieldset.filling {
   .html_academy a{
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration-color: var(--button-hover-gradient-one);
 }
 
 .html_academy a:hover {
