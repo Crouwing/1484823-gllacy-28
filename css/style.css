@@ -32,7 +32,7 @@
 /*  Тени*/
   --button-white-active-shadow: #696969;
   --modal-shadow: rgba(0, 0, 0, 0.4);
-  --button-text-shadow: rgba(160, 32, 11, 0.76);  /*Текстовые тени в кнопках*/
+  --button-text-shadow: rgba(160, 32, 11, 0.76);  
   --hit-hover-shadow: rgba(0, 0, 0, 0.2);
   --slider-buy-shadow: rgba(172, 16, 0, 1);
   --button-shadow: rgba(172, 16, 0, 0.64);
@@ -334,7 +334,6 @@ a {
   right: 0px;
   top: 36px;
 
-  width: 341px;
   padding: 20px 15px;
   background: var(--modal-form-background);
   box-shadow: 0px 20px 20px var(--modal-shadow);
@@ -347,7 +346,6 @@ a {
   padding: 15px;
   background: var(--basic-white);
   border: 1px solid var(--modal-box-border);
-  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -373,7 +371,7 @@ a {
   position: relative;
   padding: 5px 16px 8px 44px;
   margin-right: 10px;
-  width: 92px;
+/*  width: 92px;*/
   height: 32px;
   background-color: var(--universal-background-color);
   border-radius: 20px;
@@ -393,10 +391,7 @@ a {
 }
 
 .login:hover .login_url {
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
   color: var(--basic-dark);
 }
 
@@ -425,7 +420,7 @@ a {
   right: 0px;
   top: 36px;
 
-  padding: 20px 17px 10px 19px;
+  padding: 20px 18px 10px 19px;
   background: var(--modal-form-background);
   box-shadow: 0px 20px 20px var(--modal-shadow);
   border-radius: 4px;
@@ -508,7 +503,7 @@ a {
 .empty_basket {
   position: relative;
   padding: 5px 16px 8px 45px;
-  width: 100px;
+/*  width: 100px;*/
   height: 32px;
   background: var(--universal-background-color);
   border-radius: 20px;
@@ -537,7 +532,7 @@ a {
 
 .basket_red {
   position: relative;
-  padding: 5px 16px 9px 44px;
+  padding: 6px 16px 9px 44px;
   width: 118px;
   height: 32px;
   background: var(--basic-white);
@@ -554,7 +549,7 @@ a {
   right: 0px;
   top: 36px;
   width: 539px;
-  padding: 20px 14px 21px 21px;
+  padding: 20px 14px 23px 21px;
   background: var(--modal-form-background);
   box-shadow: 0px 20px 20px var(--modal-shadow);
   border-radius: 4px;
@@ -565,12 +560,12 @@ a {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
   border-bottom: 1px solid var(--list-of-goods-border);
 }
 
 .list_of_goods li{
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   display: flex;
   align-items: center;
 }
@@ -1322,7 +1317,7 @@ a {
 
 
  .communication {
-/*  display: none;*/
+  display: none;
   position: fixed;
   top: 338px;
   right: 712px;
