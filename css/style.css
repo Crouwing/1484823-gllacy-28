@@ -32,11 +32,11 @@
 /*  Тени*/
   --button-white-active-shadow: #696969;
   --modal-shadow: rgba(0, 0, 0, 0.4);
-  --shadow-three: rgba(160, 32, 11, 0.76);  /*Текстовые тени в кнопках*/
+  --button-text-shadow: rgba(160, 32, 11, 0.76);  /*Текстовые тени в кнопках*/
   --hit-hover-shadow: rgba(0, 0, 0, 0.2);
   --slider-buy-shadow: rgba(172, 16, 0, 1);
   --button-shadow: rgba(172, 16, 0, 0.64);
-  --button-login-form-shadow: rgba(172, 16, 0, 0.25);
+  --button-form-shadow: rgba(172, 16, 0, 0.25);
   --button-active-shadow: #942718;
   --button-hover-shadow: #AC1000;
 
@@ -190,12 +190,9 @@ a {
   margin-left: auto;
 }
 
-.active_ctlg {
-  padding: 5px 14px 7px 14px;
+.main_navigation .active_ctlg {
   background: var(--active-ctlg);
-  border-radius: 26px;
-  margin-left: -14px;
-  margin-right: -13px;
+  text-decoration: none;
 }
 
 .ctlg {
@@ -208,12 +205,14 @@ a {
 .ctlg:hover  {
   color: var(--basic-dark);
   background: var(--basic-white);
+  text-decoration: none;
 }
 
 .ctlg:active {
   color: var(--basic-dark);
   background: var(--ctlg-active);
   box-shadow: inset 0px 2px 1px var(--button-white-active-shadow);
+  text-decoration: none;
 
 }
 
@@ -497,8 +496,9 @@ a {
   line-height: 16px;
   border: none;
   color: var(--basic-white);
-  box-shadow: 0px 1px 2px var(--button-login-form-shadow);
-  text-shadow: 0px 2px 5px var(--shadow-three);
+  box-shadow: 0px 1px 2px var(--button-form-shadow);
+  text-shadow: 0px 2px 5px var(--button-text-shadow);
+  border-radius: 26px;
 
 }
 
@@ -656,6 +656,8 @@ a {
   line-height: 16px;
   border: none;
   color: var(--basic-white);
+  box-shadow: 0px 1px 2px var(--button-form-shadow);
+  border-radius: 26px;
  }
 
 /* Время работы и тел */
@@ -750,7 +752,7 @@ a {
   line-height: 41px;
   text-align: center;
   color: var(--basic-white);
-  text-shadow: 0px 2px 5px var(--shadow-three);
+  text-shadow: 0px 2px 5px var(--button-text-shadow);
 }
 
 .slider_button:hover {
@@ -859,7 +861,7 @@ a {
   margin-top: 42px;
   margin-left: 358px;
   padding: 12px 22px;
-  text-shadow: 0px 2px 5px var(--shadow-three);
+  text-shadow: 0px 2px 5px var(--button-text-shadow);
 }
 
 
@@ -907,7 +909,7 @@ a {
   margin-left: 332px;
   margin-top: 42px;
   padding: 12px 22px;
-  text-shadow: 0px 2px 5px var(--shadow-three);
+  text-shadow: 0px 2px 5px var(--button-text-shadow);
 
 }
 
@@ -1236,7 +1238,7 @@ a {
   text-align: center;
   padding: 11px 19px 10px 19px;
   margin-left: 6px;
-  text-shadow: 0px 2px 5px var(--shadow-three);
+  text-shadow: 0px 2px 5px var(--button-text-shadow);
   border: 0;
 }
 
@@ -1312,7 +1314,7 @@ a {
   padding: 10px 28px;
   border-radius: 70px;
   color: var(--basic-white);
-  text-shadow: 0px 2px 5px var(--shadow-three);
+  text-shadow: 0px 2px 5px var(--button-text-shadow);
 }
 
 
@@ -1320,14 +1322,15 @@ a {
 
 
  .communication {
-  display: none;
+/*  display: none;*/
   position: fixed;
   top: 338px;
   right: 712px;
-  padding: 15px 16px 24px 24px;
+  padding: 17px 16px 24px 24px;
   width: 477px;
   background: var(--modal-form-background);
   border-radius: 6px;
+  z-index: 1;
 }
 
  .modal_show {
@@ -1838,10 +1841,8 @@ fieldset.filling {
 .button_filter:active {
   background: var(--ctlg-active);
   box-shadow: inset 0px 2px 1px var(--button-white-active-shadow);
-  border-radius: 26px;
   color: var(--basic-dark);
   border: none;
-
 }
 
 
@@ -1902,6 +1903,8 @@ fieldset.filling {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  background: linear-gradient(180deg, var(--button-gradient-one) 0%, var(--sherbets-a-hover) 100%);
+  box-shadow: 0px 1px 2px var(--button-hover-shadow);
   color: var(--basic-white);
   text-decoration: none;
 }
