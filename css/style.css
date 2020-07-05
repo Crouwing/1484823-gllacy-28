@@ -196,8 +196,8 @@ a {
 }
 
 .ctlg {
-  padding: 5px 13px 7px 13px;
-  margin-left: -14px;
+  padding: 5px 14px 7px 13px;
+  margin-left: -13px;
   margin-right: -11px;
   border-radius: 26px;
 }
@@ -369,9 +369,8 @@ a {
 
 .login {
   position: relative;
-  padding: 5px 16px 8px 44px;
+  padding: 7px 16px 8px 44px;
   margin-right: 10px;
-/*  width: 92px;*/
   height: 32px;
   background-color: var(--universal-background-color);
   border-radius: 20px;
@@ -502,8 +501,7 @@ a {
 
 .empty_basket {
   position: relative;
-  padding: 5px 16px 8px 45px;
-/*  width: 100px;*/
+  padding: 7px 16px 8px 45px;
   height: 32px;
   background: var(--universal-background-color);
   border-radius: 20px;
@@ -548,7 +546,6 @@ a {
   position: absolute;
   right: 0px;
   top: 36px;
-  width: 539px;
   padding: 20px 14px 23px 21px;
   background: var(--modal-form-background);
   box-shadow: 0px 20px 20px var(--modal-shadow);
@@ -557,6 +554,8 @@ a {
 
 
 .list_of_goods {
+  display: grid;
+  grid-template-columns: 504px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -599,7 +598,6 @@ a {
 
  .product_basket {
   width: 216px;
-  display: inline-block;
   text-align: start;
   margin-right: 31px;
   font-style: normal;
@@ -712,7 +710,7 @@ a {
   text-align: center;
   margin: 0 auto;
   width: 672px;
-  margin-bottom: 27px;
+  margin-bottom: 36px;
 }
 
 .slider a {
@@ -740,8 +738,7 @@ a {
 }
 
 .slider_button {
-  display: inline-block;
-  padding: 9px 41px;
+  padding: 13px 41px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -762,7 +759,7 @@ a {
 
 .slider_controls {
   position: absolute;
-  bottom: 23px;
+  bottom: 14px;
   left: 0;
   display: grid;
   grid-template-columns: 21px 21px 21px;
@@ -807,7 +804,7 @@ a {
   display: grid;
   grid-template-columns: 560px 560px;
   column-gap: 26px;
-  margin-top: 40px;
+  margin-top: 49px;
 }
 
 
@@ -819,10 +816,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 22px;
-  padding-bottom: 22px;
+  padding: 16px 22px 22px 16px;
   border-radius: 16px;
   background-color: var(--Raspberry-color);
   background-image: url(../img/crimson-background.png);
@@ -838,6 +832,7 @@ a {
 
 .raspberry a {
   display: inline-block;
+  vertical-align: middle;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -868,10 +863,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 22px;
-  padding-bottom: 22px;
+  padding: 16px 18px 10px 16px;
   border-radius: 16px;
   background-color: var(--Chocolate-color);
   background-image: url(../img/chocolate-background.png);
@@ -888,6 +880,7 @@ a {
 
 .chocolate a {
   display: inline-block;
+  vertical-align: middle;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -996,7 +989,6 @@ a {
 /* Преимущества, вафельный фон */
 
 .advantages {
-  /*border:1px dashed transparent;*/
   margin: 0;
   padding: 0;
   padding: 24px 23px 30px 23px;
@@ -1029,7 +1021,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  
 }
 
  .ice_cream {
@@ -1120,9 +1111,8 @@ a {
 /* 10 способов сервировки */
 
 .sherbets {
-  width: 560px;
   border-radius: 16px;
-  padding: 19px;
+  padding: 20px;
   background-color: var(--strawberry-background-color);
   background-image: url(../img/strawberry-background.png);
   background-size: cover;
@@ -1160,13 +1150,9 @@ a {
 }
 
 
-/* Подписка на рассылку */ /* Не могу понять как сделать отсупы внутреннего блока от почтового фона( */
+/* Подписка на рассылку */ 
 
 .mailing_bg {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 560px;
   border-radius: 16px;
   background-color: var(--basic-mail);
   background-image: url(../img/mail-background.png);
@@ -1176,10 +1162,7 @@ a {
 .mail {
   position: relative;
   width: 548px;
-  padding-top: 23px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 28px;
+  padding: 23px 20px 35px 20px;
   border-radius: 16px;
   background-color: var(--modal-form-background);
   margin: 0 auto;
@@ -1206,8 +1189,9 @@ a {
 
   width: 368px;
   height: 44px;
-  margin-top: 47px;
-  padding: 14px;
+  margin-top: 42px;
+  border-radius: 6px;
+  padding: 12px;
 }
 
 .email::placeholder {
@@ -1223,7 +1207,7 @@ a {
 
 .button_email {
   position: absolute;
-  bottom: 32px;
+  bottom: 35px;
   right: 21px;
   font-style: normal;
   font-weight: bold;
@@ -1246,12 +1230,20 @@ a {
   position: relative;
   left: 4px;
   top: 2px;
+
 }
 
 .map iframe {
   position: absolute;
   right: 31px;
   border: none;
+  z-index: 1;
+}
+
+.map img {
+  position: absolute;
+  right: 31px;
+  z-index: 0;
 }
 
 .map {
@@ -1261,13 +1253,14 @@ a {
 
 .feedback_map {
   position: absolute;
-  top: 62px;
-  left: 839px;
-  margin: 0;
-  padding: 0;
+  top: 61px;
+  left: 843px;
+  z-index: 3;
+
+  padding: 32px 25px 39px 25px;
   background-color: var(--feedback-map-background);
   border-radius: 16px;
-  padding: 32px 25px 39px 29px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1282,15 +1275,13 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-dark);
-  width: 225px;
   margin: 0;
 }
 
 .phone_feedback {
-  margin-top: 22px;
+  margin-top: 21px;
   margin-bottom: 38px;
 }
-
 
  .phone_bold {
   font-style: normal;
@@ -1321,8 +1312,7 @@ a {
   position: fixed;
   top: 338px;
   right: 712px;
-  padding: 17px 16px 24px 24px;
-  width: 477px;
+  padding: 17px 25px 24px 24px;
   background: var(--modal-form-background);
   border-radius: 6px;
   z-index: 1;
@@ -1364,6 +1354,7 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-dark);
+  border-radius: 4px;
 }
 
 .communication input::placeholder {
@@ -1380,6 +1371,7 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-dark);
+  border-radius: 4px;
 
   width: 428px;
   height: 154px;
@@ -1418,6 +1410,7 @@ a {
 
  .button_communication {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 4px;
   margin-left: 288px;
   padding: 11px 24px;
@@ -1498,10 +1491,6 @@ a {
 
 .breadcrumb a {
   list-style-type: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
   color: var(--basic-white);
   text-decoration: underline;
   text-decoration-color: var(--universal-background-color);
@@ -1509,6 +1498,19 @@ a {
 
 .breadcrumb a:hover {
   color:  var(--info-a-hover);
+}
+
+.breadcrumb h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  color: var(--basic-white);
+}
+
+.breadcrumb li {
+  position: relative;
+  margin-right: 22px;
 }
 
 .breadcrumb_ctlg::before {
@@ -1533,19 +1535,6 @@ a {
   height: 6px;
   background-image: url(../img/breadcrumb.svg);
   background-repeat: no-repeat;
-}
-
-.breadcrumb h1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 41px;
-  color: var(--basic-white);
-}
-
-.breadcrumb li {
-  position: relative;
-  margin-right: 22px;
 }
 
   /*Фильтр*/
@@ -1614,12 +1603,6 @@ a {
 }
 
 
-
-.row {
-  position: relative;
-}
-
-
 .sort:hover {
   font-style: normal;
   font-weight: 500;
@@ -1634,7 +1617,7 @@ a {
   width: 215px;
   background: var(--universal-background-color);
   border-radius: 20px;
-  padding: 16px 21px;
+  padding: 14px 20px;
 }
 
 .range_filter .scale {
@@ -1664,11 +1647,11 @@ a {
 }
 
 .range_filter .toggle_min {
-  left: 32px;
+  left: 35px;
 }
 
 .range_filter .toggle_max {
-  left: 130px;
+  left: 133px;
 }
 
 
@@ -1678,7 +1661,7 @@ a {
   padding: 0;
   background: var(--universal-background-color);
   border-radius: 20px;
-  padding: 5px 20px 4px 17px;
+  padding: 5px 20px 2px 18px;
 }
 
 .fat {
@@ -1695,14 +1678,11 @@ a {
 
 .fat+label::before {
   content: '';
-  display: inline-block;
   width: 22px;
   height: 22px;
   background-image: url(../img/radio-off.svg);
   opacity: 0.8;
   margin-right: 11px;
-  background-repeat: no-repeat;
-  background-position: center center;
   background-size:22px 22px;
 }
 
@@ -1741,9 +1721,9 @@ a {
 
 
 .fillers {
+  width: 711px;
   margin: 0;
   display: flex;
-  padding: 0;
   background: var(--universal-background-color);
   border-radius: 20px;
   padding: 8px 19px 4px 15px;
@@ -1776,13 +1756,11 @@ fieldset.filling {
 
 .filler+label::before {
   content: '';
-  display: inline-block;
   width: 20px;
   height: 20px;
   background-image: url(../img/checkbox-off.svg);
   opacity: 0.8;
-  margin-right: 15px;
-  background-repeat: no-repeat;
+  margin-right: 14px;
   background-position: center center;
   background-size:24px 20px;
 }
@@ -1801,7 +1779,7 @@ fieldset.filling {
   width: 24px;
   height: 20px;
   background-image: url(../img/checkbox-on.svg);
-  margin-right: 11px;
+  margin-right: 10px;
   opacity: 0.8;
 }
 
@@ -1933,8 +1911,8 @@ fieldset.filling {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  margin-right: -13px;
-  margin-bottom: 32px;
+  margin-right: -15px;
+  margin-bottom: 34px;
 }
 
 .page_number {
@@ -1942,7 +1920,7 @@ fieldset.filling {
   border-radius: 50%;
   margin-right: -9px;
   margin-left: -9px;
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .page_number:hover {
@@ -1957,18 +1935,16 @@ fieldset.filling {
 }
 
 .catalog_page .active_page {
-  padding: 3px 9px;
   background-color: var(--basic-white);
   color: var(--basic-dark);
-  border-radius: 50%;
-  margin-right: -9px;
-  margin-left: -9px;
 }
 
 
 .catalog_page li {
-  margin-right: 20px;
+  margin-top: 2px;
+  margin-right: 21px;
 }
+
 
 .catalog_page a {
   font-style: normal;
@@ -2001,8 +1977,6 @@ fieldset.filling {
 .footer {
   position: relative;
   border-top: 1px solid var(--universal-background-color);
-  width: 1144px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -2012,7 +1986,8 @@ fieldset.filling {
 .social_networks ul {
   padding: 0;
   margin: 0;
-  margin-top: 36px;
+  margin-top: 35px;
+  margin-left: 2px;
   list-style-type: none;
   display: grid;
   grid-template-columns: 32px 32px 32px 32px;
@@ -2068,7 +2043,7 @@ fieldset.filling {
   row-gap: 5px;
   padding: 0;
   margin-top: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   line-height: 11px;
  }
 
