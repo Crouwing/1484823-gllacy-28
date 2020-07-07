@@ -37,15 +37,15 @@ form_close.addEventListener("click", function (evt) {
 
 communication_form.addEventListener("submit", function (evt) {
 
-	if (!login.value || !email.value) {
+  if (!login.value || !email.value) {
     evt.preventDefault();
     modal_communication.classList.remove("modal_error");
     modal_communication.offsetWidth = modal_communication.offsetWidth;
     modal_communication.classList.add("modal_error");
 } else {
-	if (isStorageSupport) {	
-		localStorage.setItem("login", login.value);
-	}
+  if (isStorageSupport) { 
+    localStorage.setItem("login", login.value);
+  }
 }
 });
 

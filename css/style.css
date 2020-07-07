@@ -1,3 +1,84 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
+/* Анимация для формы при появлении */
+
+  @-webkit-keyframes bounce {
+
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+  @keyframes bounce {
+
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/*  Анимация для формы при ошибке*/
+
+  @-webkit-keyframes shake {
+
+  0%, 100% {
+    transform: translateX(0px);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+  @keyframes shake {
+
+  0%, 100% {
+    transform: translateX(0px);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+
 :root {
 
  /* Цвета Фона*/
@@ -106,6 +187,7 @@ a {
 .page_body {
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
 }
 
@@ -122,7 +204,7 @@ a {
 
 .button:hover {
   background: linear-gradient(0deg, var(--button-hover-gradient-one), var(--button-hover-gradient-one)), 
-            linear-gradient(180deg, var(--button-gradient-one) 0%, var(--button-gradient-two) 100%);
+              linear-gradient(180deg, var(--button-gradient-one) 0%, var(--button-gradient-two) 100%);
   box-shadow: 0px 2px 2px var(--button-hover-shadow);
   border-radius: 50px;
 }
@@ -180,11 +262,13 @@ a {
 .main_navigation a {
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: var(--universal-background-color);
+  -webkit-text-decoration-color: var(--universal-background-color);
+          text-decoration-color: var(--universal-background-color);
 }
 
 .user_navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   margin-top: 14px;
   margin-left: auto;
@@ -357,6 +441,22 @@ a {
   color: var(--basic-dark);
 }
 
+.search input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-placeholder);
+}
+
+.search input::-moz-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-placeholder);
+}
+
 .search input::placeholder {
   font-style: normal;
   font-weight: normal;
@@ -444,6 +544,24 @@ a {
 }
 
 
+.login_form input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-placeholder);
+}
+
+
+.login_form input::-moz-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-placeholder);
+}
+
+
 .login_form input::placeholder {
   font-style: normal;
   font-weight: normal;
@@ -470,7 +588,8 @@ a {
   line-height: 15px;
   color: var(--basic-dark);
   text-decoration: underline;
-  text-decoration-color: var(--login-text-decor);
+  -webkit-text-decoration-color: var(--login-text-decor);
+          text-decoration-color: var(--login-text-decor);
 }
 
 .authentication_problem a:hover {
@@ -566,6 +685,7 @@ a {
 .list_of_goods li{
   margin-bottom: 21px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -763,7 +883,8 @@ a {
   left: 0;
   display: grid;
   grid-template-columns: 21px 21px 21px;
-  column-gap: 8px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
   width: 67px;
   justify-content: space-between;
 }
@@ -803,7 +924,8 @@ a {
 .hit {
   display: grid;
   grid-template-columns: 560px 560px;
-  column-gap: 26px;
+  -moz-column-gap: 26px;
+       column-gap: 26px;
   margin-top: 49px;
 }
 
@@ -926,7 +1048,8 @@ a {
   list-style-type: none;
   display: grid;
   grid-template-columns: 267px 267px 267px 267px;
-  column-gap: 26px;
+  -moz-column-gap: 26px;
+       column-gap: 26px;
   margin: 0;
   padding: 0;
 }
@@ -979,7 +1102,8 @@ a {
 .hits a {
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: var(--universal-background-color);
+  -webkit-text-decoration-color: var(--universal-background-color);
+          text-decoration-color: var(--universal-background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -1103,7 +1227,8 @@ a {
  .news {
   display: grid;
   grid-template-columns: 560px 560px;
-  column-gap: 26px;
+  -moz-column-gap: 26px;
+       column-gap: 26px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -1192,6 +1317,22 @@ a {
   margin-top: 42px;
   border-radius: 6px;
   padding: 12px;
+}
+
+.email::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-placeholder);
+}
+
+.email::-moz-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-placeholder);
 }
 
 .email::placeholder {
@@ -1310,8 +1451,7 @@ a {
  .communication {
   display: none;
   position: fixed;
-  top: 338px;
-  right: 712px;
+  transform: translateX(335px) translateY(-1978px);
   padding: 17px 25px 24px 24px;
   background: var(--modal-form-background);
   border-radius: 6px;
@@ -1320,13 +1460,17 @@ a {
 
  .modal_show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 0.6s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
  }
 
  .modal_error {
-  animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 
@@ -1357,6 +1501,22 @@ a {
   border-radius: 4px;
 }
 
+.communication input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-placeholder);
+}
+
+.communication input::-moz-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-placeholder);
+}
+
 .communication input::placeholder {
   font-style: normal;
   font-weight: normal;
@@ -1380,6 +1540,22 @@ a {
   border: 1px solid var(--feedback-input-border);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.communication textarea::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-placeholder);
+}
+
+.communication textarea::-moz-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-placeholder);
 }
 
 .communication textarea::placeholder {
@@ -1422,45 +1598,7 @@ a {
   color: var(--basic-white);
  }
 
- /* Анимация для формы при появлении */
-
-  @keyframes bounce {
-
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-/*  Анимация для формы при ошибке*/
-
-  @keyframes shake {
-
-  0%, 100% {
-    transform: translateX(0px);
-  }
-
-  10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
-  }
-
-  20%, 40%, 60%, 80% {
-    transform: translateX(10px);
-  }
-}
-
+ 
 
    /*Catalog.html*/
 
@@ -1478,6 +1616,7 @@ a {
 
 .breadcrumb{
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   margin-top: -25px;
@@ -1493,7 +1632,8 @@ a {
   list-style-type: none;
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: var(--universal-background-color);
+  -webkit-text-decoration-color: var(--universal-background-color);
+          text-decoration-color: var(--universal-background-color);
 }
 
 .breadcrumb a:hover {
@@ -1673,7 +1813,9 @@ a {
 .fat+label {
   display: inline-flex;
   align-items: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .fat+label::before {
@@ -1690,6 +1832,11 @@ a {
   opacity: 1;
 }
 
+.fat:focus+label::before {
+  opacity: 1;
+  border: 1px solid #00BFFF;
+}
+
 
 .fat:disabled+label::before {
   opacity: 0.4;
@@ -1700,6 +1847,7 @@ a {
   background-image: url(../img/radio-on.svg);
   opacity: 0.8;
 }
+
 
 .fat:checked:disabled + label::before {
   opacity: 0.4;
@@ -1750,7 +1898,9 @@ fieldset.filling {
 .filler+label {
   display: inline-flex;
   align-items: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 
@@ -1769,6 +1919,10 @@ fieldset.filling {
   opacity: 1;
 }
 
+.filler:focus+label::before {
+  opacity: 1;
+  border: 1px solid #00BFFF;
+}
 
 .filler:disabled+label::before {
   opacity: 0.4;
@@ -1824,7 +1978,8 @@ fieldset.filling {
  .products {
   display: grid;
   grid-template-columns: 267px 267px 267px 267px;
-  column-gap: 26px;
+  -moz-column-gap: 26px;
+       column-gap: 26px;
   row-gap: 35px;
   margin: 0;
   padding: 0;
@@ -1841,7 +1996,8 @@ fieldset.filling {
 .ice_cream_catalog a {
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: var(--universal-background-color);
+  -webkit-text-decoration-color: var(--universal-background-color);
+          text-decoration-color: var(--universal-background-color);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1991,11 +2147,21 @@ fieldset.filling {
   list-style-type: none;
   display: grid;
   grid-template-columns: 32px 32px 32px 32px;
-  column-gap: 12px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
 }
 
 .social_networks a {
   color: var(--basic-white);
+  opacity: 0.8;
+}
+
+.social_networks a:hover {
+  opacity: 1;
+}
+
+.social_networks a:active {
+  opacity: 1;
 }
 
 
@@ -2055,7 +2221,8 @@ fieldset.filling {
   line-height: 18px;
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: var(--universal-background-color);
+  -webkit-text-decoration-color: var(--universal-background-color);
+          text-decoration-color: var(--universal-background-color);
  }
 
   .about_us a:hover {
@@ -2079,7 +2246,7 @@ fieldset.filling {
  .for_suppliers::before {
   content: "";
   position: absolute;
-  right: 118px;
+  right: 116px;
   top: 2px;
 
   width: 15px;
@@ -2106,7 +2273,8 @@ fieldset.filling {
   .html_academy a{
   color: var(--basic-white);
   text-decoration: underline;
-  text-decoration-color: var(--universal-background-color);
+  -webkit-text-decoration-color: var(--universal-background-color);
+          text-decoration-color: var(--universal-background-color);
 }
 
 .html_academy a:hover {
@@ -2117,4 +2285,3 @@ fieldset.filling {
 .html_academy a:active {
   color: var(--info-a-hover);
 }
-
