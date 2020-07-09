@@ -1473,11 +1473,11 @@ a {
 
 
  .communication {
-  display: block;
+  display: none;
   position: fixed;
   left: 50%;
   top: 59%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50.1%) translateY(-50.1%);
   padding: 17px 25px 24px 24px;
   background: var(--modal-form-background);
   border-radius: 6px;
