@@ -1794,6 +1794,7 @@ a {
   background: var(--universal-background-color);
   border-radius: 20px;
   padding: 14px 20px;
+  margin-right: 4px;
 }
 
 .range_filter .scale {
@@ -1837,7 +1838,7 @@ a {
   padding: 0;
   background: var(--universal-background-color);
   border-radius: 20px;
-  padding: 5px 20px 2px 18px;
+  padding: 5px 20px 2px 14px;
 }
 
 .fat {
@@ -1870,8 +1871,7 @@ a {
 
 .fat:focus+label::before {
   opacity: 1;
-  border-radius: 50%;
-  border: 1px solid var(--focus-border);
+  border: 2px solid var(--focus-border);
 }
 
 
@@ -1880,9 +1880,14 @@ a {
 }
 
 
-.fat:checked + label::before {
+.fat:checked+label::before {
   background-image: url(../img/radio-on.svg);
   opacity: 0.8;
+}
+
+
+.fat:checked:hover + label::before {
+  opacity: 1;
 }
 
 
@@ -1890,10 +1895,6 @@ a {
   opacity: 0.4;
 }
 
-
-.fat:checked:hover + label::before {
-  opacity: 1;
-}
 
 
 .fatness li {
@@ -1957,7 +1958,7 @@ fieldset.filling {
 
 .filler:focus+label::before {
   opacity: 1;
-  border: 1px solid var(--focus-border);
+  border: 2px solid var(--focus-border);
 }
 
 .filler:disabled+label::before {
@@ -1988,7 +1989,7 @@ fieldset.filling {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
-  
+
   background: var(--universal-background-color);
   border: 2px solid var(--basic-white);
   border-radius: 20px;
