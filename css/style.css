@@ -400,7 +400,7 @@ a {
 }
 
 .search:hover .search_icon {
-  background-image: url(../img/search_hover.svg);
+  background-image: url(../img/search-hover.svg);
 }
 
 .search:hover .search_form {
@@ -418,7 +418,7 @@ a {
 .search_form {         
   display: none;
   position: absolute;
-  right: 0px;
+  right: 1px;
   top: 36px;
 
   padding: 20px 15px;
@@ -510,7 +510,7 @@ a {
 
   width: 20px;
   height: 19px;
-  background-image: url(../img/login_white.svg);
+  background-image: url(../img/login-white.svg);
   background-repeat: no-repeat;
 }
 

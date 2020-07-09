@@ -15,7 +15,6 @@
             <div class="logo">
               <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип нашего магазина Глейси"></a>
             </div>
-
             <ul class="main_navigation">
               <li class="main_navigation_ctlg">
                 <a class="active_ctlg ctlg" href="catalog.html"> Каталог  </a>
@@ -36,7 +35,9 @@
                 <a class="search_icon" href="#" aria-label="поиск"></a>
                 <div class="search_form">
                   <form action="https://echo.htmlacademy.ru" method="get">
-                    <input class="search_box" type="search" name="search" placeholder="Крем-брюле"> 
+                    <label>
+                    <input class="search_box" type="search" name="search" placeholder="Крем-брюле">
+                    </label> 
                   </form>
                 </div>
               </div>
@@ -45,8 +46,12 @@
                 <a class="login_url" href="#" ><span class="login_url">Вход</span></a>
                 <div class="login_form">
                   <form action="https://echo.htmlacademy.ru" method="post">
-                    <input type="email" name="email" placeholder="email@example.com" required> 
+                    <label>
+                    <input type="email" name="email" placeholder="email@example.com" required>
+                    </label> 
+                    <label>
                     <input type="password" name="password" placeholder="******" required> 
+                    </label>
                     <button class="button button_login" type="submit">Войти</button>
                     <ul class="authentication_problem">
                       <li><a href="#">Забыли пароль?</a> </li>
@@ -105,16 +110,17 @@
         <section class="filter">
           <h2 class="visually_hidden">Фильтр</h2>
           <form class="filter_form" action="https://echo.htmlacademy.ru" method="get">
-
-              <fieldset class="classification">
-                <legend class="filter_item">Сортировка:</legend>
+            <fieldset class="classification">
+              <legend class="filter_item">Сортировка:</legend>
+              <label>
                 <select class="sort" name="sort">
                   <option class="filter_points" value="по популярности" selected>по популярности</option>
                   <option class="filter_points" value="сначала недорогие">сначала недорогие</option>
                   <option class="filter_points" value="сначала дорогие">сначала дорогие</option>
                   <option class="filter_points" value="по жирности">по жирности</option>
                 </select>
-              </fieldset>
+              </label>
+            </fieldset>
 
             <fieldset class="filter_price">
               <legend class="filter_item">Цена: 100 ₽ - 500 ₽</legend>
@@ -174,7 +180,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <button class=" button_filter" type="submit">Применить</button>
           </form>
         </section>
@@ -201,7 +206,7 @@
 
             <li>
               <img src="img/hit3.png" width="267" height="267" alt="Клубничное мороженное с присыпкой в виде сердечек из белого шоколада">
-              <p class="price">355 ₽<span class="kg">/кг</span></p>
+              <p class="price">355 ₽<span class="kg">/кг</span> </p>
               <h3 class="info"><a href="#">Сливочное-клубничное с<br>присыпкой из белого шоколада</a> </h3>
               <div class="hit_hover">
                 <a class="button button_hover_product" href="#">Быстрый просмотр</a>
@@ -324,7 +329,7 @@
             <li><a href="#">Экологические стандарты</a></li>
           </ul>
         </div>
-
+        
         <div class="html_academy">
           <p>
             <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="хтмл академия"></a><br>
