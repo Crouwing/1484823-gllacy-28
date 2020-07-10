@@ -33,7 +33,7 @@ form_close.addEventListener("click", function (evt) {
     evt.preventDefault();
     modal_communication.classList.remove("modal_show");
     modal_communication.classList.remove("modal_error");
-  });
+});
 
 communication_form.addEventListener("submit", function (evt) {
 
