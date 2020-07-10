@@ -903,7 +903,6 @@ a {
   margin-top: 49px;
 }
 
-
 /* Малиновый баннер */
 
 .raspberry {
@@ -1036,10 +1035,15 @@ a {
   height: 61px;
   background-image: url(../img/hit.svg);
   background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .hits_li:hover .hit_hover {
   display: block;
+}
+
+.hits_li:hover {
+  z-index: 3;
 }
 
 .hits h3 {
@@ -1048,6 +1052,7 @@ a {
   padding: 0;
   margin-top: 8px;
   bottom: 48px;
+  z-index: 3;
 }
 
 .info a:hover {
@@ -1058,11 +1063,17 @@ a {
   color: var(--info-a-hover);
 }
 
+.hits_li img {
+  position: relative;
+  z-index: 2;
+}
+
 .hits p {
   position: absolute;
   padding: 0;
   margin: 0;
   top: 209px;
+  z-index: 2;
 }
 
 .hits a {
@@ -1566,7 +1577,7 @@ a {
   color: var(--basic-white);
 }
 
-   /*Catalog.html*/
+  /*Catalog.html*/
 
 .header_filter {
   margin-bottom: 29px;
@@ -1964,7 +1975,7 @@ fieldset.filling {
   background-color: var(--universal-background-color);
   box-shadow: 0px 20px 20px var(--hit-hover-shadow);
   border-radius: 4px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .hit_hover a {
@@ -1995,16 +2006,27 @@ fieldset.filling {
   display: block;
 }
 
+.products_li:hover {
+  z-index: 3;
+}
+
+.products_li img {
+  position: relative;
+  z-index: 2;
+}
+
 .products p {
   position: absolute;
   padding: 0;
   margin: 0;
   top: 210px;
+  z-index: 2;
 }
 
 .info {
   margin: 0;
   margin-top: 8px;
+  z-index: 3;
 }
 
   /*Список страниц в каталоге*/
