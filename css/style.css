@@ -1753,7 +1753,7 @@ a {
 }
 
 .range_filter .toggle:focus {
-  border: 2px solid var(--focus-border);
+  outline: 2px solid var(--focus-border);
 }
 
 .range_filter .toggle:hover {
@@ -1807,7 +1807,7 @@ a {
 
 .fat:focus+label::before {
   opacity: 1;
-  border: 2px solid var(--focus-border);
+  outline: 2px solid var(--focus-border);
 }
 
 .fat:disabled+label::before {
@@ -1886,7 +1886,7 @@ fieldset.filling {
 
 .filler:focus+label::before {
   opacity: 1;
-  border: 2px solid var(--focus-border);
+  outline: 2px solid var(--focus-border);
 }
 
 .filler:disabled+label::before {
